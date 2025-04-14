@@ -13,14 +13,14 @@
       <form class="max-w-xl mx-auto" x-data="{ email: '', submitted: false, error: '' }">
         <div class="relative" x-show="!submitted">
           <div class="flex flex-col sm:flex-row gap-4">
-            <div class="flex-grow">
+            <div class="grow">
               <label for="email" class="sr-only">Email address</label>
               <input 
                 type="email" 
                 id="email" 
                 x-model="email"
                 placeholder="Enter your email" 
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
                 required
               />
               <p class="text-red-500 text-sm mt-1" x-show="error" x-text="error"></p>
