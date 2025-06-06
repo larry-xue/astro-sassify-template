@@ -1,20 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
 ---
-
-<Layout title="About Our Company - Sassify">
-  <Header />
-  <main>
-    <HeroSection 
-      title="About Sassify" 
+  <section id="company" class="section bg-gray-50 dark:bg-gray-800/50">
+    <HeroSection
+      title="About Sassify"
       highlightText="Sassify"
       description="We're on a mission to empower businesses with innovative SaaS solutions."
     />
-    
-    <section class="py-16 bg-white dark:bg-gray-800">
+
+    <div class="py-16 bg-white dark:bg-gray-800">
       <div class="container-custom">
         <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
           <div>
@@ -36,7 +30,7 @@ import HeroSection from '../components/HeroSection.astro';
             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Sassify Team" class="w-full h-auto" />
           </div>
         </div>
-        
+
         <div class="mb-24">
           <div class="text-center mb-12">
             <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
@@ -47,7 +41,7 @@ import HeroSection from '../components/HeroSection.astro';
               Our values guide everything we do, from how we build our products to how we interact with our customers and each other.
             </p>
           </div>
-          
+
           <div class="grid md:grid-cols-3 gap-8">
             <div class="card p-6 border border-gray-200 dark:border-gray-700">
               <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
@@ -60,7 +54,7 @@ import HeroSection from '../components/HeroSection.astro';
                 We believe in building trust through transparency. We're open about our processes, pricing, and policies, and we always strive to do what's right for our customers.
               </p>
             </div>
-            
+
             <div class="card p-6 border border-gray-200 dark:border-gray-700">
               <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +66,7 @@ import HeroSection from '../components/HeroSection.astro';
                 We're constantly pushing the boundaries of what's possible, seeking new ways to solve complex problems and deliver exceptional value to our customers.
               </p>
             </div>
-            
+
             <div class="card p-6 border border-gray-200 dark:border-gray-700">
               <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
                 <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +80,7 @@ import HeroSection from '../components/HeroSection.astro';
             </div>
           </div>
         </div>
-        
+
         <div class="mb-24">
           <div class="text-center mb-12">
             <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
@@ -97,7 +91,7 @@ import HeroSection from '../components/HeroSection.astro';
               Our diverse team of leaders brings decades of experience and a shared passion for innovation.
             </p>
           </div>
-          
+
           <div class="grid md:grid-cols-3 gap-8">
             <div class="text-center">
               <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
@@ -109,7 +103,7 @@ import HeroSection from '../components/HeroSection.astro';
                 With over 15 years of experience in the tech industry, Michael leads our company with vision and passion.
               </p>
             </div>
-            
+
             <div class="text-center">
               <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="w-full h-full object-cover" />
@@ -120,7 +114,7 @@ import HeroSection from '../components/HeroSection.astro';
                 Sarah's technical expertise and innovative thinking drive our product development and technology strategy.
               </p>
             </div>
-            
+
             <div class="text-center">
               <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
                 <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Rodriguez" class="w-full h-full object-cover" />
@@ -133,16 +127,15 @@ import HeroSection from '../components/HeroSection.astro';
             </div>
           </div>
         </div>
-        
-        <div class="text-center">
+
+        <!-- <div class="text-center">
           <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Join Our Team</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             We're always looking for talented individuals who share our passion for innovation and excellence. Check out our current openings and join us on our mission.
           </p>
           <a href="/career" class="btn-primary">View Open Positions</a>
-        </div>
+        </div> -->
       </div>
-    </section>
-  </main>
-  <Footer />
-</Layout> 
+    </div>
+  </section>
+

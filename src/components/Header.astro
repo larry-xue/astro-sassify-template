@@ -24,46 +24,46 @@ const allPages = [
       <svg class="h-10 w-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <!-- Background circle -->
         <circle cx="50" cy="50" r="48" fill="#f0f9ff" class="dark:fill-slate-800" />
-        
+
         <!-- Elephant body -->
         <ellipse cx="55" cy="55" rx="30" ry="25" fill="#64748b" class="dark:fill-slate-600" />
-        
+
         <!-- Head -->
         <ellipse cx="30" cy="45" rx="18" ry="16" fill="#64748b" class="dark:fill-slate-600" />
-        
+
         <!-- Ears -->
         <ellipse cx="35" cy="35" rx="14" ry="12" fill="#94a3b8" class="dark:fill-slate-500" />
         <ellipse cx="25" cy="35" rx="14" ry="12" fill="#64748b" class="dark:fill-slate-600" />
         <ellipse cx="35" cy="35" rx="10" ry="9" fill="#64748b" class="dark:fill-slate-600" />
         <ellipse cx="25" cy="35" rx="10" ry="9" fill="#475569" class="dark:fill-slate-700" />
-        
+
         <!-- Trunk -->
         <path d="M25 50 Q20 60 15 70 Q13 75 18 78 Q23 80 25 75 Q27 70 25 65 Q23 60 27 55 Q29 52 30 50" fill="#64748b" class="dark:fill-slate-600" />
-        
+
         <!-- Eyes -->
         <circle cx="25" cy="42" r="2" fill="#1e293b" class="dark:fill-white" />
-        
+
         <!-- Tusks -->
         <path d="M20 55 Q18 58 16 60" stroke="white" stroke-width="2" fill="none" class="dark:stroke-slate-300" />
         <path d="M15 55 Q13 58 11 60" stroke="white" stroke-width="2" fill="none" class="dark:stroke-slate-300" />
-        
+
         <!-- Decorative circle -->
         <circle cx="50" cy="50" r="46" stroke="#0ea5e9" stroke-width="1.5" fill="none" class="dark:stroke-teal-500" stroke-dasharray="3,2" />
       </svg>
       <span class="ml-2 text-xl font-display font-semibold text-secondary-900 dark:text-white">Sassify</span>
     </a>
-    
+
     <nav class="hidden md:flex items-center space-x-8">
       <a href="/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Home</a>
       <a href="/features" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Features</a>
       <a href="/pricing" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Pricing</a>
       <a href="/blog" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Blog</a>
       <a href="/contact" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Contact</a>
-      
+
       <!-- All Pages Dropdown -->
       <div x-data="{ open: false }" class="relative">
-        <button 
-          @click="open = !open" 
+        <button
+          @click="open = !open"
           @click.away="open = false"
           class="flex items-center text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors"
         >
@@ -72,9 +72,9 @@ const allPages = [
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        
-        <div 
-          x-show="open" 
+
+        <div
+          x-show="open"
           x-transition:enter="transition ease-out duration-200"
           x-transition:enter-start="opacity-0 scale-95"
           x-transition:enter-end="opacity-100 scale-100"
@@ -94,10 +94,10 @@ const allPages = [
         </div>
       </div>
     </nav>
-    
+
     <div class="flex items-center space-x-4">
-      <button 
-        x-on:click="darkMode = !darkMode" 
+      <button
+        x-on:click="darkMode = !darkMode"
         class="p-2 rounded-full text-secondary-500 hover:text-secondary-700 dark:text-secondary-400 dark:hover:text-secondary-200 focus:outline-hidden focus:ring-2 focus:ring-primary-500"
         aria-label="Toggle dark mode"
       >
@@ -108,12 +108,12 @@ const allPages = [
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       </button>
-      
+
       <a href="#signup" class="hidden sm:inline-flex btn-primary">Get Started</a>
-      
+
       <!-- Mobile Menu Button and Dropdown -->
       <div x-data="{ open: false, showAllPages: false }">
-        <button 
+        <button
           @click="open = !open"
           class="md:hidden p-2 rounded-md text-secondary-600 hover:text-secondary-900 dark:text-secondary-300 dark:hover:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500"
           aria-label="Toggle menu"
@@ -125,9 +125,9 @@ const allPages = [
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        
-        <div 
-          x-show="open" 
+
+        <div
+          x-show="open"
           x-transition:enter="transition ease-out duration-200"
           x-transition:enter-start="opacity-0 scale-95"
           x-transition:enter-end="opacity-100 scale-100"
@@ -141,10 +141,10 @@ const allPages = [
           <a href="/pricing" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Pricing</a>
           <a href="/blog" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Blog</a>
           <a href="/contact" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Contact</a>
-          
+
           <!-- Mobile All Pages Dropdown -->
-          <button 
-            @click="showAllPages = !showAllPages" 
+          <button
+            @click="showAllPages = !showAllPages"
             class="w-full text-left px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800 font-semibold border-t border-gray-200 dark:border-gray-700 mt-1 pt-1 flex items-center justify-between"
           >
             All Pages
@@ -152,9 +152,9 @@ const allPages = [
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
-          
-          <div 
-            x-show="showAllPages" 
+
+          <div
+            x-show="showAllPages"
             class="py-1 bg-gray-50 dark:bg-secondary-800"
           >
             {allPages.map(page => (
@@ -180,13 +180,13 @@ const allPages = [
     .dark\:stroke-teal-500 { stroke: #14b8a6; }
     .dark\:fill-white { fill: #ffffff; }
   }
-  
+
   /* Add hover animation to the logo */
   header a:hover svg {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
-  
+
   /* Hide Alpine.js elements before Alpine loads */
   [x-cloak] { display: none !important; }
 </style>

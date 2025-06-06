@@ -139,26 +139,31 @@
 }
 
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display;
   }
-  
+
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold;
   }
-  
+
   h2 {
     @apply text-3xl md:text-4xl font-bold;
   }
-  
+
   h3 {
     @apply text-2xl md:text-3xl font-semibold;
   }
-  
+
   h4 {
     @apply text-xl md:text-2xl font-semibold;
   }
-  
+
   p {
     @apply text-base md:text-lg leading-relaxed;
   }
@@ -185,4 +190,27 @@
 /* Focus styles for keyboard navigation */
 :focus-visible {
   @apply outline-hidden ring-2 ring-primary-500 dark:ring-primary-400;
+}
+
+.hero-section {
+  background-image: url('../assets/wall.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.3-0.7) */
+  z-index: 1;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 2;
 }

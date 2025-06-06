@@ -4,18 +4,18 @@
   <div class="container-custom relative z-10">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="slide-up" transition:animate="slide">
-        <h1 class="mb-6 text-secondary-900 dark:text-white leading-tight">
-          <span class="text-primary-600 dark:text-primary-400">Ultimate</span> SasS Template<br>
+        <h1 class="mb-6 text-white dark:text-white leading-tight">
+          <span class="text-white dark:text-primary-400">Ultimate</span> SasS Template<br>
           for your bussiness.
         </h1>
-        <p class="text-xl text-secondary-600 dark:text-secondary-300 mb-8 max-w-lg">
+        <p class="text-xl text-[#dedede] dark:text-secondary-300 mb-8 max-w-lg">
           Sassify is a modern, responsive, and feature-rich template designed to help you create a professional and engaging website for your business.
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="/contact" class="btn-primary">
             Contact us
           </a>
-          <a href="https://larryxue.dev" target="_blank" class="btn-outline flex items-center">
+          <!-- <a href="https://larryxue.dev" target="_blank" class="btn-outline flex items-center">
             Author
           </a>
           <a href="https://github.com/larry-xue/astro-sassify-template" target="_blank" class="btn-outline flex items-center">
@@ -23,207 +23,12 @@
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
             Repo
-          </a>
-        </div>
-      </div>
-      
-      <div class="relative fade-in" transition:animate="fade">
-        <!-- Animated Elephant SVG Hero Image -->
-        <div class="w-full max-w-lg mx-auto">
-          <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-xl">
-            <!-- Background elements with animations -->
-            <circle cx="400" cy="300" r="250" fill="#f0f9ff" class="dark:fill-slate-800 animate-pulse" style="animation-duration: 8s;" />
-            <circle cx="550" cy="180" r="60" fill="#bae6fd" class="dark:fill-teal-800 animate-pulse" opacity="0.6" style="animation-duration: 5s;" />
-            <circle cx="200" cy="400" r="80" fill="#e0f2fe" class="dark:fill-slate-700 animate-pulse" opacity="0.7" style="animation-duration: 6s;" />
-            
-            <!-- Decorative elements with animations -->
-            <circle cx="400" cy="300" r="220" stroke="#0ea5e9" stroke-width="5" fill="none" class="dark:stroke-teal-500" stroke-dasharray="15,10">
-              <animateTransform 
-                attributeName="transform" 
-                type="rotate" 
-                from="0 400 300" 
-                to="360 400 300" 
-                dur="30s" 
-                repeatCount="indefinite" 
-              />
-            </circle>
-            
-            <!-- Elephant body with subtle animation -->
-            <ellipse cx="400" cy="340" rx="180" ry="140" fill="#64748b" class="dark:fill-slate-600">
-              <animate 
-                attributeName="ry" 
-                values="140;143;140" 
-                dur="4s" 
-                repeatCount="indefinite" 
-              />
-            </ellipse>
-            
-            <!-- Head with subtle animation -->
-            <ellipse cx="250" cy="280" rx="100" ry="90" fill="#64748b" class="dark:fill-slate-600">
-              <animate 
-                attributeName="ry" 
-                values="90;92;90" 
-                dur="4s" 
-                repeatCount="indefinite" 
-              />
-            </ellipse>
-            
-            <!-- Ears with animations -->
-            <ellipse cx="280" cy="220" rx="80" ry="70" fill="#94a3b8" class="dark:fill-slate-500">
-              <animate 
-                attributeName="ry" 
-                values="70;75;70" 
-                dur="5s" 
-                repeatCount="indefinite" 
-              />
-            </ellipse>
-            <ellipse cx="220" cy="220" rx="80" ry="70" fill="#64748b" class="dark:fill-slate-600">
-              <animate 
-                attributeName="ry" 
-                values="70;75;70" 
-                dur="5s" 
-                repeatCount="indefinite" 
-              />
-            </ellipse>
-            <ellipse cx="280" cy="220" rx="60" ry="50" fill="#64748b" class="dark:fill-slate-600" />
-            <ellipse cx="220" cy="220" rx="60" ry="50" fill="#475569" class="dark:fill-slate-700" />
-            
-            <!-- Trunk with animation -->
-            <path d="M200 320 Q180 380 160 440 Q150 480 180 500 Q210 510 220 480 Q230 450 220 420 Q210 390 230 350 Q240 330 250 320" fill="#64748b" class="dark:fill-slate-600">
-              <animate 
-                attributeName="d" 
-                values="M200 320 Q180 380 160 440 Q150 480 180 500 Q210 510 220 480 Q230 450 220 420 Q210 390 230 350 Q240 330 250 320;
-                        M200 320 Q185 385 165 445 Q155 485 185 505 Q215 515 225 485 Q235 455 225 425 Q215 395 235 355 Q245 335 250 320;
-                        M200 320 Q180 380 160 440 Q150 480 180 500 Q210 510 220 480 Q230 450 220 420 Q210 390 230 350 Q240 330 250 320" 
-                dur="6s" 
-                repeatCount="indefinite" 
-              />
-            </path>
-            
-            <!-- Eyes with blinking animation -->
-            <circle cx="220" cy="260" r="10" fill="#1e293b" class="dark:fill-white">
-              <animate 
-                attributeName="ry" 
-                values="10;1;10" 
-                dur="8s" 
-                repeatCount="indefinite" 
-              />
-            </circle>
-            <circle cx="222" cy="258" r="3" fill="white" class="dark:fill-slate-300" />
-            
-            <!-- Tusks -->
-            <path d="M180 340 Q170 360 160 380" stroke="white" stroke-width="10" fill="none" class="dark:stroke-slate-300" />
-            <path d="M160 340 Q150 360 140 380" stroke="white" stroke-width="10" fill="none" class="dark:stroke-slate-300" />
-            
-            <!-- Legs with subtle movement -->
-            <rect x="320" y="440" width="40" rx="20" ry="20" height="100" fill="#475569" class="dark:fill-slate-700">
-              <animate 
-                attributeName="height" 
-                values="100;102;100" 
-                dur="4s" 
-                repeatCount="indefinite" 
-              />
-            </rect>
-            <rect x="440" y="440" width="40" rx="20" ry="20" height="100" fill="#475569" class="dark:fill-slate-700">
-              <animate 
-                attributeName="height" 
-                values="100;102;100" 
-                dur="4s" 
-                repeatCount="indefinite" 
-                begin="0.5s"
-              />
-            </rect>
-            <rect x="360" y="460" width="40" rx="20" ry="20" height="80" fill="#475569" class="dark:fill-slate-700">
-              <animate 
-                attributeName="height" 
-                values="80;82;80" 
-                dur="4s" 
-                repeatCount="indefinite" 
-                begin="1s"
-              />
-            </rect>
-            <rect x="400" y="460" width="40" rx="20" ry="20" height="80" fill="#475569" class="dark:fill-slate-700">
-              <animate 
-                attributeName="height" 
-                values="80;82;80" 
-                dur="4s" 
-                repeatCount="indefinite" 
-                begin="1.5s"
-              />
-            </rect>
-            
-            <!-- Tail with swinging animation -->
-            <path d="M570 340 Q590 320 600 340 Q610 360 590 380" stroke="#475569" stroke-width="8" fill="none" class="dark:stroke-slate-700">
-              <animate 
-                attributeName="d" 
-                values="M570 340 Q590 320 600 340 Q610 360 590 380;
-                        M570 340 Q595 325 605 345 Q615 365 595 385;
-                        M570 340 Q590 320 600 340 Q610 360 590 380" 
-                dur="5s" 
-                repeatCount="indefinite" 
-              />
-            </path>
-            
-            <!-- Animated text -->
-            <text x="550" y="150" font-family="Arial" font-size="24" fill="#0ea5e9" class="dark:fill-teal-400" font-weight="bold">
-              SASSIFY
-              <animate 
-                attributeName="opacity" 
-                values="0.7;1;0.7" 
-                dur="3s" 
-                repeatCount="indefinite" 
-              />
-            </text>
-            
-            <!-- Floating particles -->
-            <circle cx="300" cy="200" r="5" fill="#0ea5e9" class="dark:fill-teal-400" opacity="0.7">
-              <animate 
-                attributeName="cy" 
-                values="200;180;200" 
-                dur="4s" 
-                repeatCount="indefinite" 
-              />
-              <animate 
-                attributeName="opacity" 
-                values="0.7;0.3;0.7" 
-                dur="4s" 
-                repeatCount="indefinite" 
-              />
-            </circle>
-            <circle cx="500" cy="250" r="4" fill="#0ea5e9" class="dark:fill-teal-400" opacity="0.5">
-              <animate 
-                attributeName="cy" 
-                values="250;230;250" 
-                dur="5s" 
-                repeatCount="indefinite" 
-              />
-              <animate 
-                attributeName="opacity" 
-                values="0.5;0.2;0.5" 
-                dur="5s" 
-                repeatCount="indefinite" 
-              />
-            </circle>
-            <circle cx="450" cy="400" r="6" fill="#0ea5e9" class="dark:fill-teal-400" opacity="0.6">
-              <animate 
-                attributeName="cy" 
-                values="400;380;400" 
-                dur="6s" 
-                repeatCount="indefinite" 
-              />
-              <animate 
-                attributeName="opacity" 
-                values="0.6;0.3;0.6" 
-                dur="6s" 
-                repeatCount="indefinite" 
-              />
-            </circle>
-          </svg>
+          </a> -->
         </div>
       </div>
     </div>
   </div>
-  
+
   <!-- Teal section at the bottom with Trusted By -->
   <div class="mt-10 w-full overflow-hidden -z-10" transition:animate="slide">
     <div class="relative bg-teal-400 dark:bg-teal-500 py-12 md:py-16">
@@ -234,7 +39,7 @@
               Next <span class="bg-accent-400 px-2 py-1">generation</span> SasS template for your bussiness.
             </div>
           </div>
-          
+
           <div class="flex flex-col items-start md:items-end justify-center">
             <p class="text-sm uppercase tracking-wider text-teal-800 dark:text-teal-800 font-medium mb-4">TRUSTED BY</p>
             <div class="flex flex-wrap justify-start md:justify-end gap-x-8 gap-y-4">
@@ -265,7 +70,7 @@
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
   }
-  
+
   /* Apply floating animation to the entire SVG container */
   .fade-in svg {
     animation: float 6s ease-in-out infinite;
