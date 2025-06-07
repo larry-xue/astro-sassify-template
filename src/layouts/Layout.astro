@@ -17,8 +17,6 @@ const {
 <!doctype html>
 <html
   lang='en'
-  x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }"
-  x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))"
   :class="{ 'dark': darkMode }"
 >
   <head>
@@ -76,16 +74,7 @@ const {
         }
       });
 
-      // Check for user preference
-      if (localStorage.getItem('darkMode') === null) {
-        // Check system preference
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          localStorage.setItem('darkMode', 'true');
-          document.documentElement.classList.add('dark');
-        } else {
-          localStorage.setItem('darkMode', 'false');
-        }
-      }
+
 
       // Handle page transitions
       document.addEventListener('astro:page-load', () => {
