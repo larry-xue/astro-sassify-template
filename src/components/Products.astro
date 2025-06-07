@@ -1,89 +1,117 @@
 ---
-import { Image } from 'astro:assets';
+import pic1 from '../assets/1.jpg';
+import pic2 from '../assets/chips-bag.jpg';
+import pic3 from '../assets/carpets-market-marrakech.jpg';
+import pic4 from '../assets/flat-lay-monochrome-paper-pieces.jpg';
+import pic5 from '../assets/still-life-hanging-bag.jpg';
+import pic6 from '../assets/spools-multi-colored-thread-textile-material-generated-by-ai.jpg';
 ---
 
-<section class="py-16 bg-white dark:bg-gray-800">
-    <div class="container-custom">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Products</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Sassify integrates with over 50 popular tools and services to help you create seamless workflows and maximize productivity.
-        </p>
-      </div>
+<section
+  class='py-16 bg-gradient-to-r from-red-200 to-blue-200 dark:bg-gray-800'
+>
+  <div class='container-custom'>
+    <div class='text-center mb-16'>
+      <h2 class='text-3xl font-bold text-gray-900 dark:text-white mb-4'>
+        Our Products
+      </h2>
+      <p class='text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto'>
+        Sassify integrates with over 50 popular tools and services to help you
+        create seamless workflows and maximize productivity.
+      </p>
+    </div>
 
-      <!-- Integration Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        <!-- Integration Card -->
-        <div class="card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" class="w-full h-auto mb-4 border-2  border-accent-400" />
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Slack</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4 p-6">
-            Get notifications and updates directly in your Slack channels. Share reports and collaborate with your team.
-          </p>
-          <!-- <div class="mt-auto">
+    <!-- Integration Grid -->
+    <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16'>
+      <!-- Integration Card -->
+      <div
+        class='card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center'
+      >
+        <img src={pic1.src} alt='Slack' class='w-full h-auto mb-4' />
+        <h3 class='text-xl font-semibold text-gray-900 dark:text-white mb-2'>
+          Slack
+        </h3>
+        <p class='text-gray-600 dark:text-gray-300 mb-4 p-6'>
+          Get notifications and updates directly in your Slack channels. Share
+          reports and collaborate with your team.
+        </p>
+        <!-- <div class="mt-auto">
             <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
           </div> -->
-        </div>
+      </div>
 
-        <!-- Integration Card -->
-        <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google Workspace" class="w-16 h-16 mb-4" />
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Google Workspace</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Sync with Google Calendar, import data from Google Sheets, and export reports to Google Drive.
-          </p>
-          <div class="mt-auto">
-            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Integration Card -->
-        <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce" class="w-16 h-16 mb-4" />
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Salesforce</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Integrate with Salesforce to sync customer data, track opportunities, and streamline your sales process.
-          </p>
-          <div class="mt-auto">
-            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Integration Card -->
-        <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-16 h-16 mb-4" />
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">GitHub</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Connect your GitHub repositories to track issues, pull requests, and code changes within Sassify.
-          </p>
-          <div class="mt-auto">
-            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Integration Card -->
-        <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-16 h-16 mb-4" />
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Figma</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Connect Sassify with Figma to sync designs and collaborate with your team.
-          </p>
-          <div class="mt-auto">
-            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Integration Card -->
-        <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-          <img src="/astro-sassify-template/src/assets/wall.jpg" alt="Jira" class="w-16 h-16 mb-4" />
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Jira</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Sync your Jira issues and projects with Sassify to keep your development and business teams aligned.
-          </p>
-          <div class="mt-auto">
-            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-          </div>
-        </div>
+      <!-- Integration Card -->
+      <div
+        class='card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center'
+      >
+        <img src={pic2.src} alt='Google Workspace' class='w-full h-auto mb-4' />
+        <h3 class='text-xl font-semibold text-gray-900 dark:text-white mb-2'>
+          Google Workspace
+        </h3>
+        <p class='p-6 text-gray-600 dark:text-gray-300 mb-4'>
+          Sync with Google Calendar, import data from Google Sheets, and export
+          reports to Google Drive.
+        </p>
+      </div>
+      <div
+        class='card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center'
+      >
+        <img src={pic3.src} alt='Google Workspace' class='w-full h-auto mb-4' />
+        <h3 class='text-xl font-semibold text-gray-900 dark:text-white mb-2'>
+          Google Workspace
+        </h3>
+        <p class='p-6 text-gray-600 dark:text-gray-300 mb-4'>
+          Sync with Google Calendar, import data from Google Sheets, and export
+          reports to Google Drive.
+        </p>
+      </div>
+      <div
+        class='card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center'
+      >
+        <img src={pic4.src} alt='Google Workspace' class='w-full h-auto mb-4' />
+        <h3 class='text-xl font-semibold text-gray-900 dark:text-white mb-2'>
+          Google Workspace
+        </h3>
+        <p class='p-6 text-gray-600 dark:text-gray-300 mb-4'>
+          Sync with Google Calendar, import data from Google Sheets, and export
+          reports to Google Drive.
+        </p>
+      </div>
+      <div
+        class='card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center'
+      >
+        <img src={pic5.src} alt='Google Workspace' class='w-full h-auto mb-4' />
+        <h3 class='text-xl font-semibold text-gray-900 dark:text-white mb-2'>
+          Google Workspace
+        </h3>
+        <p class='p-6 text-gray-600 dark:text-gray-300 mb-4'>
+          Sync with Google Calendar, import data from Google Sheets, and export
+          reports to Google Drive.
+        </p>
+      </div>
+      <div
+        class='card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center'
+      >
+        <img src={pic6.src} alt='Google Workspace' class='w-full h-auto mb-4' />
+        <h3 class='text-xl font-semibold text-gray-900 dark:text-white mb-2'>
+          Google Workspace
+        </h3>
+        <p class='p-6 text-gray-600 dark:text-gray-300 mb-4'>
+          Sync with Google Calendar, import data from Google Sheets, and export
+          reports to Google Drive.
+        </p>
+      </div>
+      <div
+        class='card border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center'
+      >
+        <img src={pic2.src} alt='Google Workspace' class='w-full h-auto mb-4' />
+        <h3 class='text-xl font-semibold text-gray-900 dark:text-white mb-2'>
+          Google Workspace
+        </h3>
+        <p class='p-6 text-gray-600 dark:text-gray-300 mb-4'>
+          Sync with Google Calendar, import data from Google Sheets, and export
+          reports to Google Drive.
+        </p>
       </div>
 
       <!-- <div class="text-center mb-16">
@@ -95,4 +123,5 @@ import { Image } from 'astro:assets';
         </a>
       </div> -->
     </div>
-  </section>
+  </div>
+</section>

@@ -2,7 +2,7 @@
 .page-transition-wrapper {
   position: relative;
   opacity: 0;
-  transform: translateY(20px);
+  /* transform: translateY(20px); */
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -21,16 +21,20 @@
 }
 
 @keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in-slide-up {
-  from { 
+  from {
     opacity: 0;
     transform: translateY(20px);
   }
-  to { 
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -97,4 +101,4 @@ footer {
 .slide-right-exit-active {
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
-} 
+}

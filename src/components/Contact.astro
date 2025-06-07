@@ -1,135 +1,269 @@
 ---
+import HeroSection from '../components/HeroSection.astro';
 ---
-<section id="contact" class="section bg-gray-50 dark:bg-gray-800/50">
-  <div class="container-custom">
-    <div class="grid md:grid-cols-2 gap-12">
-      <div class="slide-up">
-        <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+<section id='contact' class='section bg-blue-50 dark:bg-gray-800/50 py-0'>
+  <HeroSection
+    title='Contact Us'
+    highlightText='Us'
+    description="We're here to help with any questions you might have about our services.."
+  />
+  <div class='container-custom py-8'>
+    <div class='grid md:grid-cols-2 gap-12'>
+      <div class='slide-up'>
+        <span
+          class='inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4'
+        >
           Get In Touch
         </span>
-        <h2 class="mb-6 text-gray-900 dark:text-white">We'd Love to Hear From You</h2>
-        <p class="text-gray-600 dark:text-gray-300 mb-8">
-          Have questions about our platform or need help getting started? Our team is here to assist you every step of the way.
+        <h2 class='mb-6 text-gray-900 dark:text-white'>
+          We'd Love to Hear From You
+        </h2>
+        <p class='text-gray-600 dark:text-gray-300 mb-8'>
+          Have questions about our platform or need help getting started? Our
+          team is here to assist you every step of the way.
         </p>
-        
-        <div class="space-y-6">
-          <div class="flex items-start">
-            <div class="shrink-0 mt-1">
-              <svg class="w-6 h-6 text-secondary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+
+        <div class='space-y-6'>
+          <div class='flex items-start'>
+            <div class='shrink-0 mt-1'>
+              <svg
+                class='w-6 h-6 text-secondary-500'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+                ></path>
               </svg>
             </div>
-            <div class="ml-4">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Email Us</h3>
-              <p class="text-gray-600 dark:text-gray-300">support@saasify.com</p>
+            <div class='ml-4'>
+              <h3 class='text-lg font-semibold text-gray-900 dark:text-white'>
+                Email Us
+              </h3>
+              <p class='text-gray-600 dark:text-gray-300'>
+                support@saasify.com
+              </p>
             </div>
           </div>
-          
-          <div class="flex items-start">
-            <div class="shrink-0 mt-1">
-              <svg class="w-6 h-6 text-secondary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+
+          <div class='flex items-start'>
+            <div class='shrink-0 mt-1'>
+              <svg
+                class='w-6 h-6 text-secondary-500'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z'
+                ></path>
               </svg>
             </div>
-            <div class="ml-4">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Call Us</h3>
-              <p class="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
+            <div class='ml-4'>
+              <h3 class='text-lg font-semibold text-gray-900 dark:text-white'>
+                Call Us
+              </h3>
+              <p class='text-gray-600 dark:text-gray-300'>+1 (555) 123-4567</p>
             </div>
           </div>
-          
-          <div class="flex items-start">
-            <div class="shrink-0 mt-1">
-              <svg class="w-6 h-6 text-secondary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+
+          <div class='flex items-start'>
+            <div class='shrink-0 mt-1'>
+              <svg
+                class='w-6 h-6 text-secondary-500'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
+                ></path>
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'></path>
               </svg>
             </div>
-            <div class="ml-4">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Visit Us</h3>
-              <p class="text-gray-600 dark:text-gray-300">123 SaaS Street, Tech City, TC 12345</p>
+            <div class='ml-4'>
+              <h3 class='text-lg font-semibold text-gray-900 dark:text-white'>
+                Visit Us
+              </h3>
+              <p class='text-gray-600 dark:text-gray-300'>
+                123 SaaS Street, Tech City, TC 12345
+              </p>
             </div>
           </div>
         </div>
-        
-        <div class="mt-8">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Follow Us</h3>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors" aria-label="Twitter">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+
+        <div class='mt-8'>
+          <h3 class='text-lg font-semibold text-gray-900 dark:text-white mb-4'>
+            Follow Us
+          </h3>
+          <div class='flex space-x-4'>
+            <a
+              href='#'
+              class='text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors'
+              aria-label='Twitter'
+            >
+              <svg
+                class='w-6 h-6'
+                fill='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84'
+                ></path>
               </svg>
             </a>
-            <a href="#" class="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors" aria-label="LinkedIn">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+            <a
+              href='#'
+              class='text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors'
+              aria-label='LinkedIn'
+            >
+              <svg
+                class='w-6 h-6'
+                fill='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'
+                ></path>
               </svg>
             </a>
-            <a href="#" class="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors" aria-label="Facebook">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+            <a
+              href='#'
+              class='text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors'
+              aria-label='Facebook'
+            >
+              <svg
+                class='w-6 h-6'
+                fill='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'
+                ></path>
               </svg>
             </a>
-            <a href="#" class="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors" aria-label="GitHub">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            <a
+              href='#'
+              class='text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors'
+              aria-label='GitHub'
+            >
+              <svg
+                class='w-6 h-6'
+                fill='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
+                ></path>
               </svg>
             </a>
           </div>
         </div>
       </div>
-      
-      <div class="slide-up" style="animation-delay: 150ms">
-        <div class="card p-6 border border-gray-200 dark:border-gray-700">
-          <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Send Us a Message</h3>
-          
-          <form x-data="{ name: '', email: '', message: '', submitted: false, errors: {} }">
-            <div class="mb-4">
-              <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
-              <input 
-                type="text" 
-                id="name" 
-                x-model="name"
-                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                placeholder="Your name"
+
+      <div class='slide-up' style='animation-delay: 150ms'>
+        <div class='card p-6 border border-gray-200 dark:border-gray-700'>
+          <h3 class='text-xl font-semibold mb-6 text-gray-900 dark:text-white'>
+            Send Us a Message
+          </h3>
+
+          <form
+            x-data="{ name: '', email: '', message: '', submitted: false, errors: {} }"
+          >
+            <div class='mb-4'>
+              <label
+                for='name'
+                class='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1'
+                >Name</label
+              >
+              <input
+                type='text'
+                id='name'
+                x-model='name'
+                class='w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400'
+                placeholder='Your name'
               />
-              <p class="text-red-500 text-sm mt-1" x-show="errors.name" x-text="errors.name"></p>
+              <p
+                class='text-red-500 text-sm mt-1'
+                x-show='errors.name'
+                x-text='errors.name'
+              >
+              </p>
             </div>
-            
-            <div class="mb-4">
-              <label for="contact-email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
-              <input 
-                type="email" 
-                id="contact-email" 
-                x-model="email"
-                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                placeholder="Your email"
+
+            <div class='mb-4'>
+              <label
+                for='contact-email'
+                class='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1'
+                >Email</label
+              >
+              <input
+                type='email'
+                id='contact-email'
+                x-model='email'
+                class='w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400'
+                placeholder='Your email'
               />
-              <p class="text-red-500 text-sm mt-1" x-show="errors.email" x-text="errors.email"></p>
+              <p
+                class='text-red-500 text-sm mt-1'
+                x-show='errors.email'
+                x-text='errors.email'
+              >
+              </p>
             </div>
-            
-            <div class="mb-6">
-              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
-              <textarea 
-                id="message" 
-                x-model="message"
-                rows="5" 
-                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
-                placeholder="Your message"
-              ></textarea>
-              <p class="text-red-500 text-sm mt-1" x-show="errors.message" x-text="errors.message"></p>
+
+            <div class='mb-6'>
+              <label
+                for='message'
+                class='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1'
+                >Message</label
+              >
+              <textarea
+                id='message'
+                x-model='message'
+                rows='5'
+                class='w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400'
+                placeholder='Your message'></textarea>
+              <p
+                class='text-red-500 text-sm mt-1'
+                x-show='errors.message'
+                x-text='errors.message'
+              >
+              </p>
             </div>
-            
-            <div x-show="!submitted">
-              <button 
-                type="submit" 
-                class="w-full btn-primary"
+
+            <div x-show='!submitted'>
+              <button
+                type='submit'
+                class='w-full btn bg-blue-400'
                 x-on:click.prevent="
                   errors = {};
                   if (!name) errors.name = 'Please enter your name';
                   if (!email) errors.email = 'Please enter your email';
                   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Please enter a valid email';
                   if (!message) errors.message = 'Please enter your message';
-                  
+
                   if (Object.keys(errors).length === 0) {
                     submitted = true;
                   }
@@ -138,19 +272,54 @@
                 Send Message
               </button>
             </div>
-            
-            <div class="text-center p-6 bg-primary-50 dark:bg-primary-900/30 rounded-lg" x-show="submitted" x-cloak>
-              <svg class="w-12 h-12 text-primary-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+
+            <div
+              class='text-center p-6 bg-primary-50 dark:bg-primary-900/30 rounded-lg'
+              x-show='submitted'
+              x-cloak
+            >
+              <svg
+                class='w-12 h-12 text-primary-500 mx-auto mb-4'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'></path>
               </svg>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Message Sent!</h3>
-              <p class="text-gray-600 dark:text-gray-300">
-                Thank you for reaching out. We'll get back to you as soon as possible.
+              <h3
+                class='text-xl font-semibold text-gray-900 dark:text-white mb-2'
+              >
+                Message Sent!
+              </h3>
+              <p class='text-gray-600 dark:text-gray-300'>
+                Thank you for reaching out. We'll get back to you as soon as
+                possible.
               </p>
             </div>
           </form>
         </div>
       </div>
+    </div>
+    <div class='my-10 flex items-center justify-center flex-col'>
+      <div
+        class='text-lg md:text-xl text-black mb-6 md:mb-8 animate-slide-up font-semibold'
+        style='animation-delay: 200ms'
+      >
+        Visit Us At Our Dambulla Factory
+      </div>
+      <iframe
+        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.7234074864455!2d80.658152!3d7.819073699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcafb6f3d6e67f%3A0xfd36874c8ec82f7e!2sLanka%20Polysacks%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1749321498367!5m2!1sen!2slk'
+        width='100%'
+        height='450'
+        style='border:0;'
+        allowfullscreen=''
+        loading='lazy'
+        referrerpolicy='no-referrer-when-downgrade'></iframe>
     </div>
   </div>
 </section>

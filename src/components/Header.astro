@@ -1,168 +1,218 @@
 ---
+import logo from '../assets/logo.jpg';
+
 const allPages = [
-  { text: "Home", url: "/" },
-  { text: "Features", url: "/features" },
-  { text: "Pricing", url: "/pricing" },
-  { text: "FAQ", url: "/faqs" },
-  { text: "Changelog", url: "/changelog" },
-  { text: "Integrations", url: "/integrations" },
-  { text: "Blog", url: "/blog" },
-  { text: "Case Studies", url: "/case-study" },
-  { text: "About Us", url: "/company" },
-  { text: "Careers", url: "/career" },
-  { text: "Contact", url: "/contact" },
-  { text: "Reviews", url: "/reviews" },
-  { text: "Privacy Policy", url: "/privacy-policy" },
-  { text: "Terms of Service", url: "/terms-conditions" },
-  { text: "404 Page", url: "/404" }
+  { text: 'Home', url: '/' },
+  { text: 'Features', url: '/features' },
+  { text: 'Pricing', url: '/pricing' },
+  { text: 'FAQ', url: '/faqs' },
+  { text: 'Changelog', url: '/changelog' },
+  { text: 'Integrations', url: '/integrations' },
+  { text: 'Blog', url: '/blog' },
+  { text: 'Case Studies', url: '/case-study' },
+  { text: 'About Us', url: '/company' },
+  { text: 'Careers', url: '/career' },
+  { text: 'Contact', url: '/contact' },
+  { text: 'Reviews', url: '/reviews' },
+  { text: 'Privacy Policy', url: '/privacy-policy' },
+  { text: 'Terms of Service', url: '/terms-conditions' },
+  { text: '404 Page', url: '/404' },
 ];
 ---
-<header class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300">
-  <div class="container-custom flex items-center justify-between">
-    <a href="/" class="flex items-center" aria-label="Go to homepage">
-      <!-- Elephant Logo SVG -->
-      <svg class="h-10 w-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <!-- Background circle -->
-        <circle cx="50" cy="50" r="48" fill="#f0f9ff" class="dark:fill-slate-800" />
 
-        <!-- Elephant body -->
-        <ellipse cx="55" cy="55" rx="30" ry="25" fill="#64748b" class="dark:fill-slate-600" />
-
-        <!-- Head -->
-        <ellipse cx="30" cy="45" rx="18" ry="16" fill="#64748b" class="dark:fill-slate-600" />
-
-        <!-- Ears -->
-        <ellipse cx="35" cy="35" rx="14" ry="12" fill="#94a3b8" class="dark:fill-slate-500" />
-        <ellipse cx="25" cy="35" rx="14" ry="12" fill="#64748b" class="dark:fill-slate-600" />
-        <ellipse cx="35" cy="35" rx="10" ry="9" fill="#64748b" class="dark:fill-slate-600" />
-        <ellipse cx="25" cy="35" rx="10" ry="9" fill="#475569" class="dark:fill-slate-700" />
-
-        <!-- Trunk -->
-        <path d="M25 50 Q20 60 15 70 Q13 75 18 78 Q23 80 25 75 Q27 70 25 65 Q23 60 27 55 Q29 52 30 50" fill="#64748b" class="dark:fill-slate-600" />
-
-        <!-- Eyes -->
-        <circle cx="25" cy="42" r="2" fill="#1e293b" class="dark:fill-white" />
-
-        <!-- Tusks -->
-        <path d="M20 55 Q18 58 16 60" stroke="white" stroke-width="2" fill="none" class="dark:stroke-slate-300" />
-        <path d="M15 55 Q13 58 11 60" stroke="white" stroke-width="2" fill="none" class="dark:stroke-slate-300" />
-
-        <!-- Decorative circle -->
-        <circle cx="50" cy="50" r="46" stroke="#0ea5e9" stroke-width="1.5" fill="none" class="dark:stroke-teal-500" stroke-dasharray="3,2" />
-      </svg>
-      <span class="ml-2 text-xl font-display font-semibold text-secondary-900 dark:text-white">Sassify</span>
+<header
+  class='fixed w-full bg-black/5 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300'
+>
+  <div class='container-custom flex items-center justify-between'>
+    <a href='/' class='flex items-center' aria-label='Go to homepage'>
+      <img src={logo.src} alt='Logo' width='40px' height='40px' />
+      <span
+        class='ml-2 text-xl font-display font-semibold text-white dark:text-white'
+        >Lanka Polysacks</span
+      >
     </a>
 
-    <nav class="hidden md:flex items-center space-x-8">
-      <a href="/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Home</a>
-      <a href="/features" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Features</a>
-      <a href="/pricing" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Pricing</a>
-      <a href="/blog" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Blog</a>
-      <a href="/contact" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Contact</a>
+    <nav class='hidden md:flex items-center space-x-8'>
+      <a
+        href='/'
+        class='text-white hover:text-blue-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors'
+        >Home</a
+      >
+      <a
+        href='/features'
+        class='text-white hover:text-blue-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors'
+        >Features</a
+      >
+      <a
+        href='/pricing'
+        class='text-white hover:text-blue-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors'
+        >Pricing</a
+      >
+      <a
+        href='/blog'
+        class='text-white hover:text-blue-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors'
+        >Blog</a
+      >
+      <a
+        href='/contact'
+        class='text-white hover:text-blue-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors'
+        >Contact</a
+      >
 
       <!-- All Pages Dropdown -->
-      <div x-data="{ open: false }" class="relative">
+      <div x-data='{ open: false }' class='relative'>
         <button
-          @click="open = !open"
-          @click.away="open = false"
-          class="flex items-center text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors"
+          @click='open = !open'
+          @click.away='open = false'
+          class='flex items-center text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors'
         >
           All Pages
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            class='h-4 w-4 ml-1'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              stroke-width='2'
+              d='M19 9l-7 7-7-7'></path>
           </svg>
         </button>
 
         <div
-          x-show="open"
-          x-transition:enter="transition ease-out duration-200"
-          x-transition:enter-start="opacity-0 scale-95"
-          x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-150"
-          x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-95"
-          class="absolute left-0 mt-2 w-56 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden z-50 max-h-96 overflow-y-auto"
+          x-show='open'
+          x-transition:enter='transition ease-out duration-200'
+          x-transition:enter-start='opacity-0 scale-95'
+          x-transition:enter-end='opacity-100 scale-100'
+          x-transition:leave='transition ease-in duration-150'
+          x-transition:leave-start='opacity-100 scale-100'
+          x-transition:leave-end='opacity-0 scale-95'
+          class='absolute left-0 mt-2 w-56 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden z-50 max-h-96 overflow-y-auto'
           x-cloak
         >
-          <div class="py-2 grid grid-cols-1 gap-1">
-            {allPages.map(page => (
-              <a href={page.url} class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">
-                {page.text}
-              </a>
-            ))}
+          <div class='py-2 grid grid-cols-1 gap-1'>
+            {
+              allPages.map((page) => (
+                <a
+                  href={page.url}
+                  class='block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800'
+                >
+                  {page.text}
+                </a>
+              ))
+            }
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="flex items-center space-x-4">
+    <div x-data='{ open: false, showAllPages: false }'>
       <button
-        x-on:click="darkMode = !darkMode"
-        class="p-2 rounded-full text-secondary-500 hover:text-secondary-700 dark:text-secondary-400 dark:hover:text-secondary-200 focus:outline-hidden focus:ring-2 focus:ring-primary-500"
-        aria-label="Toggle dark mode"
+        @click='open = !open'
+        class='md:hidden p-2 rounded-md text-white hover:text-blue-950 dark:text-secondary-300 dark:hover:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500'
+        aria-label='Toggle menu'
       >
-        <svg x-show="!darkMode" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        <svg
+          x-show='!open'
+          xmlns='http://www.w3.org/2000/svg'
+          class='h-6 w-6'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke='currentColor'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M4 6h16M4 12h16M4 18h16'></path>
         </svg>
-        <svg x-show="darkMode" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        <svg
+          x-show='open'
+          xmlns='http://www.w3.org/2000/svg'
+          class='h-6 w-6'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke='currentColor'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M6 18L18 6M6 6l12 12'></path>
         </svg>
       </button>
 
-      <a href="#signup" class="hidden sm:inline-flex btn-primary">Get Started</a>
-
-      <!-- Mobile Menu Button and Dropdown -->
-      <div x-data="{ open: false, showAllPages: false }">
-        <button
-          @click="open = !open"
-          class="md:hidden p-2 rounded-md text-secondary-600 hover:text-secondary-900 dark:text-secondary-300 dark:hover:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500"
-          aria-label="Toggle menu"
+      <div
+        x-show='open'
+        x-transition:enter='transition ease-out duration-200'
+        x-transition:enter-start='opacity-0 scale-95'
+        x-transition:enter-end='opacity-100 scale-100'
+        x-transition:leave='transition ease-in duration-150'
+        x-transition:leave-start='opacity-100 scale-100'
+        x-transition:leave-end='opacity-0 scale-95'
+        class='absolute top-16 right-4 w-48 py-2 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden'
+        x-cloak
+      >
+        <a
+          href='/features'
+          class='block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800'
+          >Features</a
         >
-          <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <a
+          href='/pricing'
+          class='block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800'
+          >Pricing</a
+        >
+        <a
+          href='/blog'
+          class='block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800'
+          >Blog</a
+        >
+        <a
+          href='/contact'
+          class='block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800'
+          >Contact</a
+        >
+
+        <!-- Mobile All Pages Dropdown -->
+        <button
+          @click='showAllPages = !showAllPages'
+          class='w-full text-left px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800 font-semibold border-t border-gray-200 dark:border-gray-700 mt-1 pt-1 flex items-center justify-between'
+        >
+          All Pages
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            class='h-4 w-4'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            :class="{ 'transform rotate-180': showAllPages }"
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              stroke-width='2'
+              d='M19 9l-7 7-7-7'></path>
           </svg>
         </button>
 
         <div
-          x-show="open"
-          x-transition:enter="transition ease-out duration-200"
-          x-transition:enter-start="opacity-0 scale-95"
-          x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-150"
-          x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-95"
-          class="absolute top-16 right-4 w-48 py-2 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden"
-          x-cloak
+          x-show='showAllPages'
+          class='py-1 bg-gray-50 dark:bg-secondary-800'
         >
-          <a href="/features" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Features</a>
-          <a href="/pricing" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Pricing</a>
-          <a href="/blog" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Blog</a>
-          <a href="/contact" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Contact</a>
-
-          <!-- Mobile All Pages Dropdown -->
-          <button
-            @click="showAllPages = !showAllPages"
-            class="w-full text-left px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800 font-semibold border-t border-gray-200 dark:border-gray-700 mt-1 pt-1 flex items-center justify-between"
-          >
-            All Pages
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" :class="{ 'transform rotate-180': showAllPages }">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-
-          <div
-            x-show="showAllPages"
-            class="py-1 bg-gray-50 dark:bg-secondary-800"
-          >
-            {allPages.map(page => (
-              <a href={page.url} class="block px-6 py-1 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-700">
+          {
+            allPages.map((page) => (
+              <a
+                href={page.url}
+                class='block px-6 py-1 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-700'
+              >
                 {page.text}
               </a>
-            ))}
-          </div>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -172,21 +222,31 @@ const allPages = [
 <style>
   /* Add styles for dark mode SVG in the header */
   @media (prefers-color-scheme: dark) {
-    .dark\:fill-slate-800 { fill: #1e293b; }
-    .dark\:fill-slate-600 { fill: #475569; }
-    .dark\:fill-slate-500 { fill: #64748b; }
-    .dark\:fill-slate-700 { fill: #334155; }
-    .dark\:stroke-slate-300 { stroke: #cbd5e1; }
-    .dark\:stroke-teal-500 { stroke: #14b8a6; }
-    .dark\:fill-white { fill: #ffffff; }
-  }
-
-  /* Add hover animation to the logo */
-  header a:hover svg {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+    .dark\:fill-slate-800 {
+      fill: #1e293b;
+    }
+    .dark\:fill-slate-600 {
+      fill: #475569;
+    }
+    .dark\:fill-slate-500 {
+      fill: #64748b;
+    }
+    .dark\:fill-slate-700 {
+      fill: #334155;
+    }
+    .dark\:stroke-slate-300 {
+      stroke: #cbd5e1;
+    }
+    .dark\:stroke-teal-500 {
+      stroke: #14b8a6;
+    }
+    .dark\:fill-white {
+      fill: #ffffff;
+    }
   }
 
   /* Hide Alpine.js elements before Alpine loads */
-  [x-cloak] { display: none !important; }
+  [x-cloak] {
+    display: none !important;
+  }
 </style>
