@@ -3,7 +3,7 @@
 <section class="relative pt-32 pb-20 md:pt-40 overflow-hidden hero-section">
   <div class="container-custom relative z-10">
     <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="slide-up" transition:animate="slide">
+      <div class="gsap-hero-text-content"> {/* Replaced slide-up and transition:animate, added class */}
         <h1 class="mb-6 text-secondary-900 dark:text-white leading-tight">
           <span class="text-primary-600 dark:text-primary-400">Ultimate</span> SasS Template<br>
           for your bussiness.
@@ -27,7 +27,7 @@
         </div>
       </div>
       
-      <div class="relative fade-in" transition:animate="fade">
+      <div class="relative gsap-hero-image-container"> {/* Replaced fade-in and transition:animate, added class */}
         <!-- Animated Elephant SVG Hero Image -->
         <div class="w-full max-w-lg mx-auto">
           <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-xl">
@@ -225,7 +225,7 @@
   </div>
   
   <!-- Teal section at the bottom with Trusted By -->
-  <div class="mt-10 w-full overflow-hidden -z-10" transition:animate="slide">
+  <div class="mt-10 w-full overflow-hidden -z-10 gsap-hero-trusted-by"> {/* Removed transition:animate, added class */}
     <div class="relative bg-teal-400 dark:bg-teal-500 py-12 md:py-16">
       <div class="container-custom">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -267,7 +267,7 @@
   }
   
   /* Apply floating animation to the entire SVG container */
-  .fade-in svg {
+  .gsap-hero-image-container svg { /* Changed selector from .fade-in to .gsap-hero-image-container */
     animation: float 6s ease-in-out infinite;
   }
 </style>

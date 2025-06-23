@@ -1,0 +1,54 @@
+---
+// Props for customization, though not used in this basic version yet
+// export interface Props {
+//   title?: string;
+//   text?: string;
+//   buttonText?: string;
+//   buttonLink?: string;
+// }
+// const {
+//   title = "Ready to Elevate Your Business?",
+//   text = "Let's discuss how our expert team can help you achieve your goals. We're passionate about crafting solutions that drive real results.",
+//   buttonText = "Get a Free Quote",
+//   buttonLink = "/contact" // Or could be /pricing
+// } = Astro.props;
+---
+<section id="cta-main" class="section py-16 md:py-24 bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-700 dark:to-secondary-700 gsap-cta-section">
+  <div class="container-custom text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+      Ready to Start Your Next Project?
+    </h2>
+    <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10">
+      We're here to help you bring your vision to life. Reach out to us for a consultation and let's build something amazing together.
+    </p>
+    <a href="/contact" class="btn-inverted px-10 py-4 text-lg font-medium">
+      Contact Us Today
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 inline-block" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<style>
+  /* Define btn-inverted if it doesn't exist, or ensure it looks good on dark/gradient backgrounds */
+  .btn-inverted {
+    background-color: white;
+    color: var(--color-primary-600, #4f46e5); /* Fallback to a common primary color */
+    border-radius: 0.375rem; /* rounded-md */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-inverted:hover {
+    background-color: #f3f4f6; /* gray-100 */
+    color: var(--color-primary-700, #4338ca);
+  }
+  /* Ensure Tailwind variable for primary color is available or define it */
+  :root {
+    --color-primary-600: #4f46e5; /* Example primary color */
+    --color-primary-700: #4338ca; /* Example primary color hover */
+  }
+  html.dark {
+    --color-primary-600: #6366f1; /* Example dark primary color */
+    --color-primary-700: #4f46e5; /* Example dark primary color hover */
+  }
+</style>

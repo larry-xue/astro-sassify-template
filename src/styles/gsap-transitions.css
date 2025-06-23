@@ -1,0 +1,11 @@
+/* Initial state for content to be animated by GSAP */
+/* #main-content { */
+  /* opacity: 0; */ /* Set via class in Layout.astro now */
+  /* transform: translateY(20px); */ /* Example initial transform */
+/* } */
+
+/* Add any other global styles needed for GSAP animations, if any */
+/* For example, ensuring body has overflow-x: hidden during transitions */
+/* body.gsap-transitioning { */
+  /* overflow-x: hidden; */
+/* } */

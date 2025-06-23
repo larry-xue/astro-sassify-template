@@ -1,40 +1,28 @@
 ---
-const features = [
+const services = [
   {
-    title: "Intuitive Dashboard",
-    description: "Get a comprehensive overview of your business with our easy-to-use dashboard that displays all critical metrics at a glance.",
-    icon: "M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2",
+    title: "Web Design & Development",
+    description: "Crafting beautiful, responsive, and high-performing websites tailored to your brand.",
+    icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4", // Placeholder icon path
     color: "primary"
   },
   {
-    title: "Advanced Analytics",
-    description: "Make data-driven decisions with our powerful analytics tools that provide deep insights into your business performance.",
-    icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
+    title: "Digital Marketing",
+    description: "Boosting your online presence with data-driven strategies across all digital channels.",
+    icon: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z", // Placeholder icon path
     color: "secondary"
   },
   {
-    title: "Team Collaboration",
-    description: "Enhance productivity with real-time collaboration tools that keep your team connected and projects moving forward.",
-    icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+    title: "Branding & Identity",
+    description: "Building memorable brands that resonate with your target audience and stand out.",
+    icon: "M13 10V3L4 14h7v7l9-11h-7z", // Placeholder icon path
     color: "accent"
   },
   {
-    title: "Automated Workflows",
-    description: "Save time and reduce errors with customizable automation that streamlines your business processes.",
-    icon: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
+    title: "SEO Optimization",
+    description: "Improving your search engine rankings to drive organic traffic and generate leads.",
+    icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", // Placeholder icon path
     color: "warning"
-  },
-  {
-    title: "Secure Data Storage",
-    description: "Keep your sensitive information protected with enterprise-grade security and compliance features.",
-    icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
-    color: "primary"
-  },
-  {
-    title: "Mobile Accessibility",
-    description: "Access your workspace from anywhere with fully responsive design optimized for all devices.",
-    icon: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
-    color: "secondary"
   }
 ];
 ---
@@ -43,40 +31,40 @@ const features = [
   <div class="container-custom">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
-        Powerful Features
+        Our Services
       </span>
-      <h2 class="mb-6 text-gray-900 dark:text-white">Everything You Need to Succeed</h2>
+      <h2 class="mb-6 text-gray-900 dark:text-white">Creative Solutions, Measurable Results</h2>
       <p class="text-gray-600 dark:text-gray-300">
-        Our comprehensive platform provides all the tools you need to manage, grow, and scale your business efficiently.
+        Our agency offers a comprehensive suite of services to elevate your brand and achieve your business goals.
       </p>
     </div>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {features.map((feature, index) => (
+      {services.map((service, index) => (
         <div 
-          class="card p-6 border border-gray-200 dark:border-gray-700 slide-up" 
-          style={`animation-delay: ${index * 100}ms`}
+          class="card p-6 border border-gray-200 dark:border-gray-700 gsap-service-card"
+          // Removed style={`animation-delay: ${index * 100}ms`}
         >
-          <div class={`w-12 h-12 rounded-lg bg-${feature.color}-100 dark:bg-${feature.color}-900/30 flex items-center justify-center mb-6`}>
+          <div class={`w-12 h-12 rounded-lg bg-${service.color}-100 dark:bg-${service.color}-900/30 flex items-center justify-center mb-6`}>
             <svg 
-              class={`w-6 h-6 text-${feature.color}-600 dark:text-${feature.color}-400`} 
+              class={`w-6 h-6 text-${service.color}-600 dark:text-${service.color}-400`}
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24" 
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={feature.icon}></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={service.icon}></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{feature.title}</h3>
-          <p class="text-gray-600 dark:text-gray-300">{feature.description}</p>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
+          <p class="text-gray-600 dark:text-gray-300">{service.description}</p>
         </div>
       ))}
     </div>
     
     <div class="mt-16 text-center">
-      <a href="/features" class="btn-primary">
-        Explore All Features
+      <a href="/services" class="btn-primary"> {/* Changed href and text */}
+        View All Services
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg>

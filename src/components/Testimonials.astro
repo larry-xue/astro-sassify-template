@@ -39,8 +39,8 @@ const testimonials = [
     <div class="grid md:grid-cols-3 gap-8">
       {testimonials.map((testimonial, index) => (
         <div 
-          class="card p-6 border border-gray-200 dark:border-gray-700 slide-up" 
-          style={`animation-delay: ${index * 150}ms`}
+          class="card p-6 border border-gray-200 dark:border-gray-700 gsap-testimonial-card"
+          // Removed style={`animation-delay: ${index * 150}ms`} and slide-up class
         >
           <div class="mb-6">
             {[...Array(5)].map(() => (
@@ -68,7 +68,7 @@ const testimonials = [
       ))}
     </div>
     
-    <div class="mt-16 bg-linear-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 md:p-12 relative overflow-hidden">
+    <div class="mt-16 bg-linear-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 md:p-12 relative overflow-hidden gsap-testimonials-cta">
       <div class="absolute inset-0 bg-linear-to-r from-primary-600/30 to-secondary-600/30 backdrop-blur-xs"></div>
       <div class="relative z-10 text-center md:text-left md:flex items-center justify-between">
         <div class="mb-6 md:mb-0 md:mr-8">

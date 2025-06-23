@@ -2,19 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
-import Features from '../components/Features.astro';
+import Features from '../components/Features.astro'; // Potential Services Overview
+import FeaturedWork from '../components/FeaturedWork.astro';
 import Testimonials from '../components/Testimonials.astro';
-import Newsletter from '../components/Newsletter.astro';
+import CtaSection from '../components/CtaSection.astro'; // New import
+import Newsletter from '../components/Newsletter.astro'; // Potential CTA
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Sassify - Your Ultimate SasS Template">
+<Layout title="Sassify - Your Ultimate SaaS Template">
   <Header />
-  <main>
-    <Hero />
-    <Features />
-    <Testimonials />
-    <Newsletter />
-  </main>
+  {/* Main content is now implicitly within Layout.astro's #main-content slot */}
+  <Hero />
+  <Features id="features-section" /> {/* Add ID for potential ScrollTrigger later */}
+  <FeaturedWork id="featured-work-section" /> {/* New component instance */}
+  <Testimonials id="testimonials-section" /> {/* Add ID for potential ScrollTrigger later */}
+  <CtaSection id="cta-section-main" /> {/* New component instance */}
+  <Newsletter id="newsletter-section" /> {/* Add ID for potential ScrollTrigger later */}
   <Footer />
 </Layout>

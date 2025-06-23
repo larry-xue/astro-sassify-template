@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
-import '../styles/transitions.css';
-import { ViewTransitions } from 'astro:transitions';
+// import '../styles/transitions.css'; // Removed
+// import { ViewTransitions } from 'astro:transitions'; // Removed
+import '../styles/gsap-transitions.css'; // Added
 
 export interface Props {
   title: string;
@@ -26,41 +27,13 @@ const {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <ViewTransitions />
+    {/* <ViewTransitions /> Removed */}
   </head>
   <body class="antialiased bg-white dark:bg-secondary-950 text-secondary-900 dark:text-secondary-100 transition-colors duration-300">
-    <div id="page-wrapper" class="page-transition-wrapper">
+    <main id="main-content" class="opacity-0"> {/* Changed wrapper and class */}
       <slot />
-    </div>
-    <script>
-      // Check for user preference
-      if (localStorage.getItem('darkMode') === null) {
-        // Check system preference
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          localStorage.setItem('darkMode', 'true');
-          document.documentElement.classList.add('dark');
-        } else {
-          localStorage.setItem('darkMode', 'false');
-        }
-      }
-
-      // Handle page transitions
-      document.addEventListener('astro:page-load', () => {
-        // This runs on initial page load and after each navigation
-        const pageWrapper = document.getElementById('page-wrapper');
-        if (pageWrapper) {
-          pageWrapper.classList.add('page-loaded');
-        }
-      });
-
-      document.addEventListener('astro:before-swap', () => {
-        // This runs before the new page content is swapped in
-        const pageWrapper = document.getElementById('page-wrapper');
-        if (pageWrapper) {
-          pageWrapper.classList.remove('page-loaded');
-        }
-      });
-    </script>
-    <script src="../scripts/transitions.js"></script>
+    </main>
+    {/* Removed script block for localStorage dark mode and page-transition-wrapper logic */}
+    <script src="../scripts/gsap-animations.js"></script> {/* Added new script */}
   </body>
 </html>
