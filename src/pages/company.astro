@@ -5,31 +5,35 @@ import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
 ---
 
-<Layout title="About Our Company - Sassify">
+<Layout title="About Our Agency - EUROGATE">
   <Header />
   <main>
-    <HeroSection 
-      title="About Sassify" 
-      highlightText="Sassify"
-      description="We're on a mission to empower businesses with innovative SaaS solutions."
-    />
+    <div class="text-center mb-12 pt-28 md:pt-36">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        About <span class="text-blue-600 dark:text-blue-400">EUROGATE</span>
+      </h1>
+    </div>
     
-    <section class="py-16 bg-white dark:bg-gray-800">
+    <section class="py-16 bg-white dark:bg-secondary-900">
       <div class="container-custom">
         <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+
+          <!-- Text Content -->
           <div>
-            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+            <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 font-medium text-sm mb-4">
               Our Story
             </span>
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">From Startup to Industry Leader</h2>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              Bridging Dreams to Global Opportunities
+            </h2>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Founded in 2015, Sassify began with a simple idea: to make powerful SaaS tools accessible to businesses of all sizes. What started as a small team of three passionate developers has grown into a global company serving thousands of customers worldwide.
+              EUROGATE is an Uzbekistan-based consulting agency specializing in global recruitment, work & travel, and study abroad programs. Our mission is to make international opportunities accessible to students and professionals from Uzbekistan.
             </p>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Our journey hasn't always been easy, but our commitment to innovation, quality, and customer success has remained unwavering. Today, we're proud to be recognized as a leader in the SaaS industry, helping businesses transform their operations and achieve remarkable results.
+              Led by a team with real international experience in Europe, we bring firsthand knowledge and insights to every guidance, scholarship, and career placement we provide. Our approach combines expertise with personalized support to help each individual succeed abroad.
             </p>
             <p class="text-gray-600 dark:text-gray-300">
-              As we continue to grow, we remain dedicated to our core mission: empowering businesses with the tools they need to succeed in the digital age.
+              Over the years, we have guided hundreds of applicants through scholarships, visas, and career opportunities, earning trust and recognition within educational and professional communities. Today, EUROGATE continues to empower ambitious individuals to achieve their global dreams while contributing to positive social impact in Uzbekistan.
             </p>
           </div>
           <div class="rounded-lg overflow-hidden shadow-xl">
@@ -44,38 +48,41 @@ import HeroSection from '../components/HeroSection.astro';
             </span>
             <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">What We Stand For</h2>
             <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Our values guide everything we do, from how we build our products to how we interact with our customers and each other.
+              Our values, mission, and vision guide everything we do, from supporting students and professionals to driving positive social impact in Uzbekistan.
             </p>
           </div>
           
           <div class="grid md:grid-cols-3 gap-8">
+            <!-- Trust & Transparency -->
             <div class="card p-6 border border-gray-200 dark:border-gray-700">
               <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Trust & Transparency</h3>
               <p class="text-gray-600 dark:text-gray-300">
-                We believe in building trust through transparency. We're open about our processes, pricing, and policies, and we always strive to do what's right for our customers.
+                We uphold integrity in all we do. EUROGATE is open about our processes, support, and policies, ensuring students and professionals can rely on us with confidence.
               </p>
             </div>
-            
+
+            <!-- Vision -->
             <div class="card p-6 border border-gray-200 dark:border-gray-700">
               <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Innovation & Excellence</h3>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Our Vision</h3>
               <p class="text-gray-600 dark:text-gray-300">
-                We're constantly pushing the boundaries of what's possible, seeking new ways to solve complex problems and deliver exceptional value to our customers.
+                To position Uzbekistan as a trusted source of global talent while supporting national poverty alleviation initiatives.
               </p>
             </div>
-            
+
+            <!-- Customer Success -->
             <div class="card p-6 border border-gray-200 dark:border-gray-700">
               <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
                 </svg>
               </div>
@@ -101,25 +108,26 @@ import HeroSection from '../components/HeroSection.astro';
           <div class="grid md:grid-cols-3 gap-8">
             <div class="text-center">
               <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="w-full h-full object-cover" />
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Sanjar Mustafakulov" class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Michael Chen</h3>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Sanjar Mustafakulov</h3>
               <p class="text-primary-600 dark:text-primary-400 mb-2">CEO & Co-Founder</p>
               <p class="text-gray-600 dark:text-gray-300 text-sm">
-                With over 15 years of experience in the tech industry, Michael leads our company with vision and passion.
+                With over 10 years of experience in visa and consular services, Sanjar leads our company with vision and passion.
               </p>
             </div>
             
             <div class="text-center">
               <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="w-full h-full object-cover" />
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Furkat Gafurov" class="w-full h-full object-cover" />
               </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Sarah Johnson</h3>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Furkat Gafurov</h3>
               <p class="text-primary-600 dark:text-primary-400 mb-2">CTO & Co-Founder</p>
               <p class="text-gray-600 dark:text-gray-300 text-sm">
-                Sarah's technical expertise and innovative thinking drive our product development and technology strategy.
+                Furkat's extensive international experience in software development global education drives EUROGATE's technological innovation and Study Abroad strategies.
               </p>
             </div>
+            
             
             <div class="text-center">
               <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
@@ -131,15 +139,8 @@ import HeroSection from '../components/HeroSection.astro';
                 David ensures our operations run smoothly and efficiently, enabling us to deliver exceptional value to our customers.
               </p>
             </div>
+            
           </div>
-        </div>
-        
-        <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Join Our Team</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            We're always looking for talented individuals who share our passion for innovation and excellence. Check out our current openings and join us on our mission.
-          </p>
-          <a href="/career" class="btn-primary">View Open Positions</a>
         </div>
       </div>
     </section>

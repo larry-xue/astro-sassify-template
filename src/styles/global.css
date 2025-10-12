@@ -114,6 +114,10 @@
   @apply btn bg-accent-400 hover:bg-accent-500 text-black shadow-md hover:shadow-lg;
 }
 
+@utility btn-blue {
+  @apply btn bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg;
+}
+
 @utility btn-secondary {
   @apply btn bg-primary-600 hover:bg-primary-700 text-white shadow-md hover:shadow-lg;
 }

@@ -5,258 +5,109 @@ import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
 ---
 
-<Layout title="Frequently Asked Questions - Sassify">
+<Layout title="Frequently Asked Questions - EUROGATE">
   <Header />
   <main>
-    <HeroSection 
-      title="Frequently Asked Questions" 
-      highlightText="Questions"
-      description="Find answers to common questions about Sassify and our services."
-    />
+    <div class="text-center mb-12 pt-28 md:pt-36">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        Frequently Asked <span class="text-blue-600 dark:text-blue-400">Questions</span>
+      </h1>
+      <p class="text-gray-700 dark:text-gray-300">
+        Find answers to common questions about EUROGATE and our services.
+      </p>
+    </div>
     
     <section class="py-16 bg-white dark:bg-gray-800">
       <div class="container-custom">
         <div class="max-w-4xl mx-auto">
           <!-- FAQ Categories Navigation -->
           <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <a href="#general" class="px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 font-medium text-sm hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors">
+            <a href="#general" class="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 font-medium text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
               General
             </a>
-            <a href="#pricing" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Pricing & Plans
+            <a href="#services" class="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 font-medium text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+              Services
             </a>
-            <a href="#features" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Features
-            </a>
-            <a href="#security" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Security & Privacy
-            </a>
-            <a href="#support" class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-              Support
+            <a href="#visas" class="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 font-medium text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+              Visas
             </a>
           </div>
-          
+
           <!-- General FAQs -->
           <div id="general" class="mb-16">
             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
               <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </span>
               General Questions
             </h2>
-            
+
             <div class="space-y-6">
               <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">What is Sassify?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Sassify is a comprehensive SaaS platform designed to help businesses streamline their operations, improve customer engagement, and drive growth. Our suite of tools includes analytics, automation, customer relationship management, and more, all integrated into a single, easy-to-use platform.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">How can Sassify help my business?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Sassify helps businesses of all sizes by providing powerful tools that automate repetitive tasks, provide actionable insights through advanced analytics, improve customer engagement, and streamline workflows. Our customers typically see significant improvements in efficiency, customer satisfaction, and revenue growth after implementing Sassify.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Is Sassify suitable for my industry?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Yes! Sassify is designed to be flexible and adaptable to various industries. We have customers in e-commerce, healthcare, finance, education, technology, and many other sectors. Our platform can be customized to meet the specific needs of your industry and business.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">How long does it take to get started with Sassify?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Most customers can get up and running with Sassify in just a few days. Our onboarding process is designed to be smooth and efficient, with dedicated support to help you every step of the way. For more complex implementations or enterprise customers, we offer custom onboarding plans to ensure a successful deployment.
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Who can contact EUROGATE?</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  Anyone is welcome, but generally students and professionals who are seeking opportunities to study, work, or gain international experience abroad.
                 </p>
               </div>
             </div>
           </div>
-          
-          <!-- Pricing & Plans FAQs -->
-          <div id="pricing" class="mb-16">
+
+          <!-- Services FAQs -->
+          <div id="services" class="mb-16">
             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
               <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
                 </svg>
               </span>
-              Pricing & Plans
+              Key Services
             </h2>
-            
+
             <div class="space-y-6">
               <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">How much does Sassify cost?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Sassify offers several pricing tiers to accommodate businesses of different sizes and needs. Our plans start at $29/month for the Basic plan, $79/month for the Professional plan, and $199/month for the Enterprise plan. We also offer custom pricing for large organizations with specific requirements. Visit our <a href="/pricing" class="text-primary-600 dark:text-primary-400 hover:underline">pricing page</a> for detailed information.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Do you offer a free trial?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Yes, we offer a 14-day free trial for all our plans. No credit card is required to start your trial, and you'll have full access to all the features included in your selected plan. This allows you to thoroughly evaluate Sassify before making a commitment.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Can I change my plan later?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Absolutely! You can upgrade, downgrade, or cancel your plan at any time. If you upgrade, the changes will take effect immediately. If you downgrade, the changes will take effect at the start of your next billing cycle. We believe in flexibility and want to ensure you're always on the plan that best suits your needs.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Do you offer discounts for annual subscriptions?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Yes, we offer a 20% discount for customers who choose annual billing. This not only saves you money but also simplifies your accounting with just one payment per year.
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">What are the key services of EUROGATE?</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  EUROGATE offers a wide range of services to help students and professionals succeed abroad. This includes scholarship guidance, visa support, university applications, and career counseling. Each service is tailored to your needs, and you can find full details on our <a href="/services" class="text-primary-600 dark:text-primary-400 hover:underline">services page</a>.
                 </p>
               </div>
             </div>
           </div>
-          
-          <!-- Features FAQs -->
-          <div id="features" class="mb-16">
+
+          <!-- Visas FAQs -->
+          <div id="visas" class="mb-16">
             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
               <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/>
                 </svg>
               </span>
-              Features
+              Visa Assistance
             </h2>
-            
+
             <div class="space-y-6">
               <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">What are the key features of Sassify?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Sassify offers a wide range of features, including advanced analytics and reporting, workflow automation, customer relationship management, project management, team collaboration tools, integrations with popular third-party services, and customizable dashboards. Each plan includes different feature sets, so be sure to check our <a href="/features" class="text-primary-600 dark:text-primary-400 hover:underline">features page</a> for detailed information.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Can I integrate Sassify with other tools I'm already using?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Yes, Sassify offers seamless integration with many popular tools and services, including Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot, Zapier, and many more. We also provide a robust API that allows for custom integrations with your existing systems. Check our <a href="/integrations" class="text-primary-600 dark:text-primary-400 hover:underline">integrations page</a> for a complete list.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Is Sassify mobile-friendly?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Absolutely! Sassify is fully responsive and works seamlessly on desktops, tablets, and mobile devices. We also offer dedicated mobile apps for iOS and Android, allowing you to stay productive on the go.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">How often do you release new features?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  We're constantly improving Sassify and typically release new features and updates every 2-4 weeks. We prioritize our development roadmap based on customer feedback and industry trends to ensure we're always delivering value. You can stay updated on our latest releases by checking our <a href="/changelog" class="text-primary-600 dark:text-primary-400 hover:underline">changelog</a>.
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Do you assist with visa applications?</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  Yes! EUROGATE guides applicants step by step to ensure the visa application process is smooth and successful.
                 </p>
               </div>
             </div>
           </div>
-          
-          <!-- Security & Privacy FAQs -->
-          <div id="security" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </span>
-              Security & Privacy
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">How secure is my data with Sassify?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Security is our top priority. Sassify employs industry-leading security measures, including end-to-end encryption, regular security audits, multi-factor authentication, and compliance with international security standards. All data is stored in SOC 2 compliant data centers with redundant backups to ensure data integrity and availability.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Is Sassify GDPR compliant?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Yes, Sassify is fully GDPR compliant. We've implemented comprehensive data protection measures to ensure compliance with the General Data Protection Regulation (GDPR) and other privacy regulations. We provide data processing agreements (DPAs) for our customers and ensure that all data processing activities are transparent and lawful.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Who owns the data I store in Sassify?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  You retain full ownership of all data you store in Sassify. We do not claim any rights to your data and will never sell or share it with third parties without your explicit consent. You can export or delete your data at any time.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">What happens to my data if I cancel my subscription?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  If you cancel your subscription, you'll have 30 days to export your data before it's permanently deleted from our systems. We provide easy-to-use export tools to help you transition your data to another platform if needed.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Support FAQs -->
-          <div id="support" class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                </svg>
-              </span>
-              Support
-            </h2>
-            
-            <div class="space-y-6">
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">What kind of support does Sassify offer?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  We offer multiple support channels to ensure you get the help you need when you need it. All plans include email support with a 24-hour response time. Professional and Enterprise plans also include live chat support during business hours, and Enterprise plans include dedicated phone support and a named account manager.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Do you offer training and onboarding assistance?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Yes, we provide comprehensive onboarding assistance for all customers. Professional and Enterprise plans include personalized onboarding sessions with our customer success team. We also offer a rich library of documentation, video tutorials, and webinars to help you get the most out of Sassify.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Is there a community forum for Sassify users?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  Yes, we have an active community forum where users can share tips, ask questions, and connect with other Sassify users. Our team also participates in the forum to provide guidance and collect feedback. It's a great resource for learning best practices and staying up-to-date with the latest features.
-                </p>
-              </div>
-              
-              <div class="card p-6 border border-gray-200 dark:border-gray-700">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">How can I request a new feature?</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                  We welcome feature requests and value your input! You can submit feature requests through our customer portal, community forum, or by contacting our support team. We regularly review and prioritize feature requests based on customer demand and strategic alignment.
-                </p>
-              </div>
-            </div>
-          </div>
-          
+
+          <!-- Still have questions -->
           <div class="text-center mt-16">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Still have questions?</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-8">
+            <p class="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Our team is here to help. Contact us and we'll get back to you as soon as possible.
             </p>
-            <a href="/contact" class="btn-primary">Contact Support</a>
+            <a href="/contact" class="btn-blue">Contact Support</a>
           </div>
+
         </div>
       </div>
     </section>
   </main>
   <Footer />
 </Layout>
-

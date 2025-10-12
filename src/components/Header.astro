@@ -1,20 +1,16 @@
 ---
 const allPages = [
   { text: "Home", url: "/" },
-  { text: "Features", url: "/features" },
-  { text: "Pricing", url: "/pricing" },
+  { text: "Services", url: "/services" },
   { text: "FAQ", url: "/faqs" },
-  { text: "Changelog", url: "/changelog" },
   { text: "Integrations", url: "/integrations" },
   { text: "Blog", url: "/blog" },
   { text: "Case Studies", url: "/case-study" },
   { text: "About Us", url: "/company" },
-  { text: "Careers", url: "/career" },
   { text: "Contact", url: "/contact" },
   { text: "Reviews", url: "/reviews" },
   { text: "Privacy Policy", url: "/privacy-policy" },
   { text: "Terms of Service", url: "/terms-conditions" },
-  { text: "404 Page", url: "/404" }
 ];
 ---
 <header class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300">
@@ -50,13 +46,12 @@ const allPages = [
         <!-- Decorative circle -->
         <circle cx="50" cy="50" r="46" stroke="#0ea5e9" stroke-width="1.5" fill="none" class="dark:stroke-teal-500" stroke-dasharray="3,2" />
       </svg>
-      <span class="ml-2 text-xl font-display font-semibold text-secondary-900 dark:text-white">Sassify</span>
+      <span class="ml-2 text-xl font-display font-semibold text-secondary-900 dark:text-white">EUROGATE</span>
     </a>
     
     <nav class="hidden md:flex items-center space-x-8">
       <a href="/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Home</a>
-      <a href="/features" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Features</a>
-      <a href="/pricing" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Pricing</a>
+      <a href="/services" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Services</a>
       <a href="/blog" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Blog</a>
       <a href="/contact" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Contact</a>
       
@@ -108,9 +103,7 @@ const allPages = [
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       </button>
-      
-      <a href="#signup" class="hidden sm:inline-flex btn-primary">Get Started</a>
-      
+            
       <!-- Mobile Menu Button and Dropdown -->
       <div x-data="{ open: false, showAllPages: false }">
         <button 
@@ -137,8 +130,7 @@ const allPages = [
           class="absolute top-16 right-4 w-48 py-2 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden"
           x-cloak
         >
-          <a href="/features" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Features</a>
-          <a href="/pricing" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Pricing</a>
+          <a href="/services" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Services</a>
           <a href="/blog" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Blog</a>
           <a href="/contact" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Contact</a>
           

@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Services - EUROGATE Global Opportunities">
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-linear-to-b from-primary-100 to-white dark:from-primary-950 dark:to-secondary-950 pt-24 md:pt-32 pb-16 md:pb-20">
+      <div class="absolute inset-0 z-0 opacity-30">
+        <div class="absolute inset-0 bg-grid-pattern"></div>
+      </div>
+
+      <div class="container-custom relative z-10">
+        <div class="text-center max-w-3xl mx-auto px-4">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 text-gray-900 dark:text-white animate-slide-down">
+            Explore <span class="text-blue-600 dark:text-blue-400">EUROGATE Services</span>
+          </h1>
+          <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
+            Discover how EUROGATE empowers students and professionals with global opportunities, training, and workforce solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Animated Shapes -->
+      <div class="absolute -bottom-16 left-0 right-0 flex justify-center">
+        <div class="w-48 md:w-64 h-48 md:h-64 bg-accent-400 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+      </div>
+    </section>
+
+    <!-- Service Cards Section -->
+    <section class="section relative z-10 overflow-hidden py-12 md:py-16">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+          <!-- Card 1: Study Abroad & Scholarships -->
+          <div class="feature-card group perspective">
+            <div class="relative transform-gpu transition-all duration-700 preserve-3d hover:rotate-y-180 cursor-pointer touch-action-card min-h-[320px] md:min-h-[360px]">
+              <!-- Front -->
+              <div class="absolute inset-0 backface-hidden">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0">
+                  <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Study Abroad & Scholarships</h3>
+                  <p class="text-gray-600 dark:text-gray-300">Guiding students to global opportunities and helping secure scholarships abroad.</p>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="absolute inset-0 backface-hidden rotate-y-180">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0 bg-primary-600 dark:bg-primary-800 text-white">
+                  <h3 class="text-xl font-semibold mb-4">How It Works</h3>
+                  <p>We provide personalized guidance and support for students seeking international education opportunities, including scholarships and application assistance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Workforce Sourcing -->
+          <div class="feature-card group perspective">
+            <div class="relative transform-gpu transition-all duration-700 preserve-3d hover:rotate-y-180 cursor-pointer touch-action-card min-h-[320px] md:min-h-[360px]">
+              <!-- Front -->
+              <div class="absolute inset-0 backface-hidden">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0">
+                  <div class="rounded-full bg-accent-100 dark:bg-accent-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-accent-600 dark:text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Workforce Sourcing</h3>
+                  <p class="text-gray-600 dark:text-gray-300">Providing skilled and motivated candidates for diverse sectors across the globe.</p>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="absolute inset-0 backface-hidden rotate-y-180">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0 bg-accent-600 dark:bg-accent-800 text-white">
+                  <h3 class="text-xl font-semibold mb-4">How It Works</h3>
+                  <p>We connect motivated students and essential workforce talent with employers abroad, ensuring reliable and pre-qualified candidates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Talent Supply for Partners -->
+          <div class="feature-card group perspective">
+            <div class="relative transform-gpu transition-all duration-700 preserve-3d hover:rotate-y-180 cursor-pointer touch-action-card min-h-[320px] md:min-h-[360px]">
+              <!-- Front -->
+              <div class="absolute inset-0 backface-hidden">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0">
+                  <div class="rounded-full bg-secondary-100 dark:bg-secondary-800 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-secondary-600 dark:text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Talent Supply for Partners</h3>
+                  <p class="text-gray-600 dark:text-gray-300">Providing reliable, pre-qualified candidates to recruitment agencies and employers abroad.</p>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="absolute inset-0 backface-hidden rotate-y-180">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0 bg-secondary-600 dark:bg-secondary-800 text-white">
+                  <h3 class="text-xl font-semibold mb-4">How It Works</h3>
+                  <p>We streamline the recruitment process by supplying trusted talent, helping partners save time and reduce hiring risks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Visa & Relocation -->
+          <div class="feature-card group perspective">
+            <div class="relative transform-gpu transition-all duration-700 preserve-3d hover:rotate-y-180 cursor-pointer touch-action-card min-h-[320px] md:min-h-[360px]">
+              <!-- Front -->
+              <div class="absolute inset-0 backface-hidden">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0">
+                  <div class="rounded-full bg-warning-100 dark:bg-warning-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-warning-600 dark:text-warning-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Visa & Relocation</h3>
+                  <p class="text-gray-600 dark:text-gray-300">Helping students and employees navigate visas, travel, and relocation logistics smoothly.</p>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="absolute inset-0 backface-hidden rotate-y-180">
+                <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center text-center flex-shrink-0 bg-warning-600 dark:bg-warning-800 text-white">
+                  <h3 class="text-xl font-semibold mb-4">How It Works</h3>
+                  <p>We assist with visa applications, travel guidance, and relocation support, making international transitions seamless and stress-free.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-white">Ready to Unlock Global Opportunities?</h2>
+          <p class="text-primary-100 mb-6 md:mb-8">
+            Join students and partners worldwide who trust EUROGATE for scholarships, workforce solutions, and international success.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#signup" class="btn-accent text-sm md:text-base px-4 py-2 md:px-6 md:py-3 w-full sm:w-auto">
+              Get Started Now
+            </a>
+            <a href="#contact" class="btn-outline bg-white/10 text-white border-white/20 hover:bg-white/20 text-sm md:text-base px-4 py-2 md:px-6 md:py-3 w-full sm:w-auto">
+              Schedule a Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  /* 3D Cards */
+  .perspective { perspective: 1000px; }
+  .preserve-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; }
+  .rotate-y-180 { transform: rotateY(180deg); }
+  .touch-action-card { transition: transform 0.5s ease; }
+
+  @media (hover: none) {
+    .touch-action-card:active { transform: rotateY(180deg); }
+  }
+
+  .grid { display: grid; gap: 1.5rem; }
+  @media (min-width: 768px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.feature-card.perspective .preserve-3d');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        if (window.matchMedia('(hover: none)').matches) {
+          card.classList.toggle('rotate-y-180');
+        }
+      });
+    });
+  });
+</script>
