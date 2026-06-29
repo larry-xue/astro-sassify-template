@@ -14,8 +14,6 @@ export function getStaticPaths() {
   ];
 }
 
-const { slug } = Astro.params;
-
 // This would normally come from a CMS or database
 const posts = {
   'new-dashboard-features': {
@@ -318,7 +316,7 @@ const posts = {
     category: 'Security',
     image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     content: `
-      <p class="mb-4">At SaaSify, security is our top priority. We're pleased to announce several important security enhancements and compliance updates that further strengthen the protection of your data.</p>
+      <p class="mb-4">At Sassify, security is our top priority. We're pleased to announce several important security enhancements and compliance updates that further strengthen the protection of your data.</p>
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">Enhanced Authentication</h2>
       
@@ -572,13 +570,22 @@ const posts = {
       <p>We're excited to see how these integrations help streamline your workflows and look forward to your feedback as you explore the marketplace.</p>
     `
   }
-};
+} as const;
+
+type PostSlug = keyof typeof posts;
+
+function isPostSlug(value: string | undefined): value is PostSlug {
+  return typeof value === 'string' && value in posts;
+}
+
+const { slug } = Astro.params;
+
+if (!isPostSlug(slug)) return Astro.redirect('/404');
 
 const post = posts[slug];
-if (!post) return Astro.redirect('/404');
 ---
 
-<Layout title={`${post.title} - SaaSify Blog`} description={post.title}>
+<Layout title={`${post.title} - Sassify Blog`} description={post.title}>
   <Header />
   <main>
     <article class="pt-32 pb-16 md:pt-40 md:pb-24">

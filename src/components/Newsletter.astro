@@ -10,7 +10,29 @@
         </p>
       </div>
       
-      <form class="max-w-xl mx-auto" x-data="{ email: '', submitted: false, error: '' }">
+      <form
+        class="max-w-xl mx-auto"
+        x-data="{
+          email: '',
+          submitted: false,
+          error: '',
+          submit() {
+            if (!this.email) {
+              this.error = 'Please enter your email';
+              return;
+            }
+
+            if (!this.$refs.email.checkValidity()) {
+              this.error = 'Please enter a valid email';
+              return;
+            }
+
+            this.error = '';
+            this.submitted = true;
+          }
+        }"
+        x-on:submit.prevent="submit()"
+      >
         <div class="relative" x-show="!submitted">
           <div class="flex flex-col sm:flex-row gap-4">
             <div class="grow">
@@ -19,6 +41,7 @@
                 type="email" 
                 id="email" 
                 x-model="email"
+                x-ref="email"
                 placeholder="Enter your email" 
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
                 required
@@ -28,18 +51,6 @@
             <button 
               type="submit" 
               class="btn-primary whitespace-nowrap"
-              x-on:click.prevent="
-                if (!email) {
-                  error = 'Please enter your email';
-                  return;
-                }
-                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                  error = 'Please enter a valid email';
-                  return;
-                }
-                error = '';
-                submitted = true;
-              "
             >
               Subscribe Now
             </button>

@@ -36,12 +36,13 @@ A modern, responsive Astro template with Tailwind CSS and Alpine.js integration.
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+Requires Node.js 22.12 or later. All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run check`           | Runs Astro diagnostics and type checks           |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
@@ -99,12 +100,18 @@ npm create astro@latest -- --template larry-xue/astro-sassify-template
    npm install
    ```
 
-3. Start the development server
+3. Run checks
+   ```bash
+   npm run check
+   npm run build
+   ```
+
+4. Start the development server
    ```bash
    npm run dev
    ```
 
-4. Visit `http://localhost:4321` in your browser to see your site
+5. Visit `http://localhost:4321` in your browser to see your site
 
 ## 📝 License
 

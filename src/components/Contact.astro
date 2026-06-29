@@ -82,7 +82,31 @@
         <div class="card p-6 border border-gray-200 dark:border-gray-700">
           <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Send Us a Message</h3>
           
-          <form x-data="{ name: '', email: '', message: '', submitted: false, errors: {} }">
+          <form
+            x-data="{
+              name: '',
+              email: '',
+              message: '',
+              submitted: false,
+              errors: {},
+              submit() {
+                this.errors = {};
+
+                if (!this.name) this.errors.name = 'Please enter your name';
+                if (!this.email) {
+                  this.errors.email = 'Please enter your email';
+                } else if (!this.$refs.email.checkValidity()) {
+                  this.errors.email = 'Please enter a valid email';
+                }
+                if (!this.message) this.errors.message = 'Please enter your message';
+
+                if (Object.keys(this.errors).length === 0) {
+                  this.submitted = true;
+                }
+              }
+            }"
+            x-on:submit.prevent="submit()"
+          >
             <div class="mb-4">
               <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
               <input 
@@ -91,6 +115,7 @@
                 x-model="name"
                 class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
                 placeholder="Your name"
+                required
               />
               <p class="text-red-500 text-sm mt-1" x-show="errors.name" x-text="errors.name"></p>
             </div>
@@ -101,8 +126,10 @@
                 type="email" 
                 id="contact-email" 
                 x-model="email"
+                x-ref="email"
                 class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
                 placeholder="Your email"
+                required
               />
               <p class="text-red-500 text-sm mt-1" x-show="errors.email" x-text="errors.email"></p>
             </div>
@@ -115,6 +142,7 @@
                 rows="5" 
                 class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
                 placeholder="Your message"
+                required
               ></textarea>
               <p class="text-red-500 text-sm mt-1" x-show="errors.message" x-text="errors.message"></p>
             </div>
@@ -123,17 +151,6 @@
               <button 
                 type="submit" 
                 class="w-full btn-primary"
-                x-on:click.prevent="
-                  errors = {};
-                  if (!name) errors.name = 'Please enter your name';
-                  if (!email) errors.email = 'Please enter your email';
-                  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Please enter a valid email';
-                  if (!message) errors.message = 'Please enter your message';
-                  
-                  if (Object.keys(errors).length === 0) {
-                    submitted = true;
-                  }
-                "
               >
                 Send Message
               </button>
