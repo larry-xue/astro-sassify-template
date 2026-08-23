@@ -1,6 +1,6 @@
 ---
 // Rendered only on the author's own demo deployment, where PUBLIC_DEMO=true.
-// If you cloned this template it renders nothing at all — no markup and no CSS —
+// If you cloned this template it renders nothing at all — no markup, no CSS —
 // and you can safely delete this file.
 const isDemo = import.meta.env.PUBLIC_DEMO === 'true'
 const repo = 'https://github.com/larry-xue/astro-sassify-template'
@@ -9,40 +9,68 @@ const repo = 'https://github.com/larry-xue/astro-sassify-template'
 {isDemo && (
   <>
     <style is:inline>{`
-      .lx-demo-banner {
-        display: flex;
-        flex-wrap: wrap;
+      .lx-demo-badge {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 2147483000;
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
-        gap: 0.35rem 1rem;
-        padding: 0.6rem 1rem;
-        background: #111827;
+        gap: 0.5rem;
+        max-width: calc(100vw - 2rem);
+        padding: 0.5rem 0.85rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(17, 24, 39, 0.86);
+        -webkit-backdrop-filter: saturate(1.6) blur(10px);
+        backdrop-filter: saturate(1.6) blur(10px);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
         color: #e5e7eb;
-        font-size: 0.8125rem;
-        line-height: 1.4;
         font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-        text-align: center;
-      }
-      .lx-demo-banner p { margin: 0; }
-      .lx-demo-banner strong { color: #fff; font-weight: 600; }
-      .lx-demo-banner a {
-        color: #fff;
-        font-weight: 600;
+        font-size: 0.78125rem;
+        line-height: 1.3;
+        letter-spacing: 0.005em;
         text-decoration: none;
-        border-bottom: 1px solid rgba(255,255,255,0.45);
         white-space: nowrap;
+        transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
       }
-      .lx-demo-banner a:hover { border-bottom-color: #fff; }
-      @media (max-width: 480px) {
-        .lx-demo-banner { font-size: 0.75rem; padding: 0.5rem 0.75rem; }
+      .lx-demo-badge:hover,
+      .lx-demo-badge:focus-visible {
+        transform: translateY(-1px);
+        border-color: rgba(255, 255, 255, 0.34);
+        background: rgba(17, 24, 39, 0.94);
+      }
+      .lx-demo-badge:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      .lx-demo-badge__dot {
+        width: 0.4rem; height: 0.4rem; flex: none;
+        border-radius: 50%; background: #34d399;
+      }
+      .lx-demo-badge__cta { color: #fff; font-weight: 600; }
+      .lx-demo-badge__arrow { opacity: 0.65; }
+      @media (max-width: 640px) {
+        .lx-demo-badge {
+          right: 0.75rem;
+          bottom: 1rem;
+          font-size: 0.75rem;
+          padding: 0.45rem 0.75rem;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .lx-demo-badge { transition: none; }
+        .lx-demo-badge:hover { transform: none; }
       }
     `}</style>
-    <aside class="lx-demo-banner">
-      <p>
-        You are looking at <strong>Astro Sassify</strong>, a free MIT-licensed Astro template.
-        Use it for client work, invoice for it, ship it.
-      </p>
-      <a href={repo} target="_blank" rel="noopener">Get it on GitHub &rarr;</a>
-    </aside>
+    <a
+      class="lx-demo-badge"
+      href={repo}
+      target="_blank"
+      rel="noopener"
+      aria-label="This is a free MIT-licensed Astro template. View it on GitHub."
+    >
+      <span class="lx-demo-badge__dot" aria-hidden="true"></span>
+      <span>Free Astro template</span>
+      <span class="lx-demo-badge__cta">Get it on GitHub</span>
+      <span class="lx-demo-badge__arrow" aria-hidden="true">&#8599;</span>
+    </a>
   </>
 )}
