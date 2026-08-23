@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import '../styles/transitions.css';
 import { ClientRouter } from 'astro:transitions';
+import DemoBanner from '../components/DemoBanner.astro'
 
 export interface Props {
   title: string;
@@ -29,6 +30,7 @@ const {
     <ClientRouter />
   </head>
   <body class="antialiased bg-white dark:bg-secondary-950 text-secondary-900 dark:text-secondary-100 transition-colors duration-300">
+    <DemoBanner />
     <div id="page-wrapper" class="page-transition-wrapper">
       <slot />
     </div>

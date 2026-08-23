@@ -1,0 +1,48 @@
+---
+// Rendered only on the author's own demo deployment, where PUBLIC_DEMO=true.
+// If you cloned this template it renders nothing at all — no markup and no CSS —
+// and you can safely delete this file.
+const isDemo = import.meta.env.PUBLIC_DEMO === 'true'
+const repo = 'https://github.com/larry-xue/astro-sassify-template'
+---
+
+{isDemo && (
+  <>
+    <style is:inline>{`
+      .lx-demo-banner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem 1rem;
+        padding: 0.6rem 1rem;
+        background: #111827;
+        color: #e5e7eb;
+        font-size: 0.8125rem;
+        line-height: 1.4;
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+        text-align: center;
+      }
+      .lx-demo-banner p { margin: 0; }
+      .lx-demo-banner strong { color: #fff; font-weight: 600; }
+      .lx-demo-banner a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.45);
+        white-space: nowrap;
+      }
+      .lx-demo-banner a:hover { border-bottom-color: #fff; }
+      @media (max-width: 480px) {
+        .lx-demo-banner { font-size: 0.75rem; padding: 0.5rem 0.75rem; }
+      }
+    `}</style>
+    <aside class="lx-demo-banner">
+      <p>
+        You are looking at <strong>Astro Sassify</strong>, a free MIT-licensed Astro template.
+        Use it for client work, invoice for it, ship it.
+      </p>
+      <a href={repo} target="_blank" rel="noopener">Get it on GitHub &rarr;</a>
+    </aside>
+  </>
+)}
