@@ -1,6 +1,11 @@
 ---
 import '@fontsource-variable/inter';
 import '@fontsource-variable/lexend';
+// Preload the latin subsets: without this the browser only discovers the font
+// after the stylesheet parses, which serialises HTML -> CSS -> font and was
+// 83% of the largest-contentful-paint as pure render delay.
+import interLatin from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import lexendLatin from '@fontsource-variable/lexend/files/lexend-latin-wght-normal.woff2?url';
 import '../styles/global.css';
 import '../styles/transitions.css';
 import { ClientRouter } from 'astro:transitions';
@@ -26,6 +31,8 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={lexendLatin} as="font" type="font/woff2" crossorigin />
     <ClientRouter />
   </head>
   <body class="antialiased bg-white dark:bg-secondary-950 text-secondary-900 dark:text-secondary-100 transition-colors duration-300">
