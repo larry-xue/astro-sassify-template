@@ -1,5 +1,3 @@
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/larry-xue/astro-sassify-template?utm_source=oss&utm_medium=github&utm_campaign=larry-xue%2Fastro-sassify-template&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
-
 # Astro Sassify Template
 
 A modern, responsive Astro template with Tailwind CSS and Alpine.js integration. This template provides a solid foundation for building fast, SEO-friendly websites with a clean design system.
@@ -14,6 +12,15 @@ A modern, responsive Astro template with Tailwind CSS and Alpine.js integration.
 - Smooth page transitions
 - Performance optimized
 - SEO-friendly
+
+## 💼 Commercial Use
+
+This template is **MIT** — use it for client work, invoice for it, ship it. No strings, no gated "pro" version.
+
+If you're shipping paid projects on it, there are three ways to support the work: a one-time
+**$75 commercial sponsorship**, a **$199 ship-assist** if you're stuck, and a **$499/yr agency plan**.
+
+**→ [Commercial use & support](./COMMERCIAL.md)**
 
 ## 📦 Project Structure
 
@@ -116,6 +123,8 @@ npm create astro@latest -- --template larry-xue/astro-sassify-template
 ## 📝 License
 
 MIT
+
+Using it commercially? See [COMMERCIAL.md](./COMMERCIAL.md) — MIT means you owe nothing, but there is a button if you'd rather not.
 
 ## 👀 Learn More
 
