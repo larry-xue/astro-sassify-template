@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
+import { Icon } from 'astro-icon/components';
+import { integrations } from '../data/brands';
 ---
 
 <Layout title="Integrations - Sassify">
@@ -47,78 +49,22 @@ import HeroSection from '../components/HeroSection.astro';
         
         <!-- Integration Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          <!-- Integration Card -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" class="w-16 h-16 mb-4" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Slack</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Get notifications and updates directly in your Slack channels. Share reports and collaborate with your team.
-            </p>
-            <div class="mt-auto">
-              <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
+          {integrations.map((it) => (
+            <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
+              <span
+                class="w-16 h-16 mb-4 rounded-2xl flex items-center justify-center"
+                style={`background: oklch(94% 0.05 ${it.hue}); color: oklch(48% 0.15 ${it.hue});`}
+              >
+                <Icon name={it.icon} class="w-8 h-8" aria-hidden="true" />
+              </span>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{it.name}</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">{it.body}</p>
+              <div class="mt-auto">
+                <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
+              </div>
             </div>
-          </div>
-          
-          <!-- Integration Card -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google Workspace" class="w-16 h-16 mb-4" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Google Workspace</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Sync with Google Calendar, import data from Google Sheets, and export reports to Google Drive.
-            </p>
-            <div class="mt-auto">
-              <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-            </div>
-          </div>
-          
-          <!-- Integration Card -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce" class="w-16 h-16 mb-4" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Salesforce</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Integrate with Salesforce to sync customer data, track opportunities, and streamline your sales process.
-            </p>
-            <div class="mt-auto">
-              <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-            </div>
-          </div>
-          
-          <!-- Integration Card -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-16 h-16 mb-4" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">GitHub</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Connect your GitHub repositories to track issues, pull requests, and code changes within Sassify.
-            </p>
-            <div class="mt-auto">
-              <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-            </div>
-          </div>
-          
-          <!-- Integration Card -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-16 h-16 mb-4" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Figma</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Connect Sassify with Figma to sync designs and collaborate with your team.
-            </p>
-            <div class="mt-auto">
-              <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-            </div>
-          </div>
-          
-          <!-- Integration Card -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" class="w-16 h-16 mb-4" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Jira</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Sync your Jira issues and projects with Sassify to keep your development and business teams aligned.
-            </p>
-            <div class="mt-auto">
-              <a href="#" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Learn More</a>
-            </div>
-          </div>
-        </div>
+          ))}
+</div>
         
         <div class="text-center mb-16">
           <a href="#" class="btn-outline">

@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components';
+import { customers } from '../data/brands';
 ---
 <section class="relative pt-32 pb-20 md:pt-40 overflow-hidden hero-section">
   <div class="container-custom relative z-10">
@@ -238,18 +240,12 @@
           <div class="flex flex-col items-start md:items-end justify-center">
             <p class="text-sm uppercase tracking-wider text-teal-800 dark:text-teal-800 font-medium mb-4">TRUSTED BY</p>
             <div class="flex flex-wrap justify-start md:justify-end gap-x-8 gap-y-4">
-              <div class="h-8 flex items-center">
-                <span class="text-black dark:text-black font-medium">Google</span>
-              </div>
-              <div class="h-8 flex items-center">
-                <span class="text-black dark:text-black font-medium">Apple</span>
-              </div>
-              <div class="h-8 flex items-center">
-                <span class="text-black dark:text-black font-medium">Beebole</span>
-              </div>
-              <div class="h-8 flex items-center">
-                <span class="text-black dark:text-black font-medium">Deliverect</span>
-              </div>
+              {customers.map((c) => (
+                <div class="h-8 flex items-center gap-2">
+                  <Icon name={c.icon} class="w-5 h-5 text-black/70 shrink-0" aria-hidden="true" />
+                  <span class="text-black dark:text-black font-medium">{c.name}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
