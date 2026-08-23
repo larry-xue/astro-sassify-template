@@ -39,7 +39,7 @@ Stuck somewhere between `git clone` and a live site? I'll take your fork from "d
 
 **Turnaround: 3 business days. If I can't unblock you, you don't pay.**
 
-**→ Email [larryxue0311@gmail.com](mailto:larryxue0311@gmail.com)** with your repo URL and what's broken.
+**→ Email [azoux0311@gmail.com](mailto:azoux0311@gmail.com)** with your repo URL and what's broken.
 
 ---
 
@@ -53,7 +53,7 @@ For studios shipping multiple client sites on these templates.
 - Your studio credited in the README of every template
 - Ship Assist included for your team, fair use
 
-**→ Email [larryxue0311@gmail.com](mailto:larryxue0311@gmail.com)** with your studio name and what you're building.
+**→ Email [azoux0311@gmail.com](mailto:azoux0311@gmail.com)** with your studio name and what you're building.
 
 ---
 
