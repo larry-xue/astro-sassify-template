@@ -51,8 +51,8 @@
   --color-warning-900: #713f12;
   --color-warning-950: #422006;
 
-  --font-sans: Inter, system-ui, sans-serif;
-  --font-display: Lexend, system-ui, sans-serif;
+  --font-sans: 'Inter Variable', Inter, system-ui, sans-serif;
+  --font-display: 'Lexend Variable', Lexend, system-ui, sans-serif;
 
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-up: slideUp 0.5s ease-in-out;
