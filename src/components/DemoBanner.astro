@@ -9,6 +9,10 @@
 // backticks into the stylesheet and breaks every rule after the first.
 const isDemo = import.meta.env.PUBLIC_DEMO === 'true'
 const repo = 'https://github.com/larry-xue/astro-sassify-template'
+/** The paid template. Two actions in one pill rather than a second floating
+ *  badge, which would cover the page it is advertising. Both halves are still
+ *  behind PUBLIC_DEMO, so a fork renders neither. */
+const more = 'https://larryxue.dev/templates'
 
 const css = `
 .lx-demo-badge {
@@ -17,10 +21,11 @@ const css = `
   bottom: 1rem;
   z-index: 2147483000;
   display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: stretch;
+  gap: 0;
+  overflow: hidden;
   max-width: calc(100vw - 2rem);
-  padding: 0.5rem 0.85rem;
+  padding: 0;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: rgba(17, 24, 39, 0.86);
@@ -31,17 +36,23 @@ const css = `
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 0.78125rem;
   line-height: 1.3;
-  text-decoration: none;
   white-space: nowrap;
-  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  transition: transform 0.15s ease, border-color 0.15s ease;
 }
-.lx-demo-badge:hover,
-.lx-demo-badge:focus-visible {
-  transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.34);
-  background: rgba(17, 24, 39, 0.94);
+.lx-demo-badge:hover { transform: translateY(-1px); border-color: rgba(255, 255, 255, 0.34); }
+.lx-demo-badge__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.15s ease;
 }
-.lx-demo-badge:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.lx-demo-badge__link:hover { background: rgba(255, 255, 255, 0.09); }
+.lx-demo-badge__link:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
+.lx-demo-badge__sep { width: 1px; flex: none; align-self: stretch; background: rgba(255, 255, 255, 0.18); }
+.lx-demo-badge__more { color: #fff; font-weight: 600; }
 .lx-demo-badge__dot {
   width: 0.4rem; height: 0.4rem; flex: none;
   border-radius: 50%; background: #34d399;
@@ -49,12 +60,11 @@ const css = `
 .lx-demo-badge__cta { color: #fff; font-weight: 600; }
 .lx-demo-badge__arrow { opacity: 0.65; }
 @media (max-width: 640px) {
-  .lx-demo-badge {
-    right: 0.75rem;
-    bottom: 1rem;
-    font-size: 0.75rem;
-    padding: 0.45rem 0.75rem;
-  }
+  .lx-demo-badge { right: 0.75rem; bottom: 1rem; font-size: 0.75rem; }
+  .lx-demo-badge__link { padding: 0.45rem 0.7rem; gap: 0.4rem; }
+  /* Under 400px both labels together run off the screen. The free half keeps the
+     dot and drops its words; the paid link is the one worth the space. */
+  .lx-demo-badge__free-text { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .lx-demo-badge { transition: none; }
@@ -66,17 +76,18 @@ const css = `
 {isDemo && (
   <>
     <style is:inline set:html={css}></style>
-    <a
-      class="lx-demo-badge"
-      href={repo}
-      target="_blank"
-      rel="noopener"
-      aria-label="This is a free MIT-licensed Astro template. View it on GitHub."
-    >
-      <span class="lx-demo-badge__dot" aria-hidden="true"></span>
-      <span>Free Astro template</span>
-      <span class="lx-demo-badge__cta">Get it on GitHub</span>
-      <span class="lx-demo-badge__arrow" aria-hidden="true">&#8599;</span>
-    </a>
+    <div class="lx-demo-badge">
+      <a class="lx-demo-badge__link" href={repo} target="_blank" rel="noopener">
+        <span class="lx-demo-badge__dot" aria-hidden="true"></span>
+        <span class="lx-demo-badge__free-text">Free template</span>
+        <span class="lx-demo-badge__cta">GitHub</span>
+        <span class="lx-demo-badge__arrow" aria-hidden="true">&#8599;</span>
+      </a>
+      <span class="lx-demo-badge__sep" aria-hidden="true"></span>
+      <a class="lx-demo-badge__link" href={more} target="_blank" rel="noopener">
+        <span class="lx-demo-badge__more">More templates</span>
+        <span class="lx-demo-badge__arrow" aria-hidden="true">&#8599;</span>
+      </a>
+    </div>
   </>
 )}
