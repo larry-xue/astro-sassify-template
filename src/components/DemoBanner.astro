@@ -9,10 +9,13 @@
 // backticks into the stylesheet and breaks every rule after the first.
 const isDemo = import.meta.env.PUBLIC_DEMO === 'true'
 const repo = 'https://github.com/larry-xue/astro-sassify-template'
-/** The paid template. Two actions in one pill rather than a second floating
- *  badge, which would cover the page it is advertising. Both halves are still
- *  behind PUBLIC_DEMO, so a fork renders neither. */
-const more = 'https://larryxue.dev/templates'
+/** The paid template's live demo — the thing itself, not a page about it.
+ *  Someone already looking at a demo wants another demo, not a catalogue.
+ *
+ *  Two actions in one pill rather than a second floating badge, which would
+ *  cover the page it is advertising. Both halves stay behind PUBLIC_DEMO, so a
+ *  fork renders neither. */
+const pro = 'https://astroloop-pro.larryxue.dev'
 
 const css = `
 .lx-demo-badge {
@@ -84,8 +87,8 @@ const css = `
         <span class="lx-demo-badge__arrow" aria-hidden="true">&#8599;</span>
       </a>
       <span class="lx-demo-badge__sep" aria-hidden="true"></span>
-      <a class="lx-demo-badge__link" href={more} target="_blank" rel="noopener">
-        <span class="lx-demo-badge__more">More templates</span>
+      <a class="lx-demo-badge__link" href={pro} target="_blank" rel="noopener">
+        <span class="lx-demo-badge__more">Astroloop Pro</span>
         <span class="lx-demo-badge__arrow" aria-hidden="true">&#8599;</span>
       </a>
     </div>
