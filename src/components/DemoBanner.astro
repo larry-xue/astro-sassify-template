@@ -73,6 +73,31 @@ const css = `
   .lx-demo-badge { transition: none; }
   .lx-demo-badge:hover { transform: none; }
 }
+
+/* Mobile: centred at the bottom, and it gets out of the way while you scroll.
+   A pill pinned to the bottom-right corner of a phone sits exactly where the
+   thumb is and covers the last line of every section it passes.
+   Three quarters of it slides away on scroll and it comes back when the scroll
+   stops — enough of it stays visible to be found again without being in the way. */
+@media (max-width: 640px) {
+  .lx-demo-badge {
+    right: auto;
+    left: 50%;
+    bottom: max(0.9rem, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .lx-demo-badge:hover { transform: translateX(-50%); }
+  /* 75% of its own height PLUS the gap it sits above the bottom edge. Without
+     the gap it only clears 70% — the pill has to travel its own offset before
+     any of it starts leaving the screen. */
+  .lx-demo-badge.is-scrolling {
+    transform: translateX(-50%) translateY(calc(75% + max(0.9rem, env(safe-area-inset-bottom))));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lx-demo-badge.is-scrolling { transform: translateX(-50%); }
+}
 `
 ---
 
@@ -94,3 +119,27 @@ const css = `
     </div>
   </>
 )}
+
+<script>
+  // Only the peek-away behaviour lives here; the position is CSS. Gated on the
+  // same breakpoint so a desktop reader never pays for a scroll listener.
+  {
+    const badge = document.querySelector('.lx-demo-badge')
+    const mq = window.matchMedia('(max-width: 640px)')
+    if (badge) {
+      let t
+      const onScroll = () => {
+        if (!mq.matches) return
+        badge.classList.add('is-scrolling')
+        clearTimeout(t)
+        // 220ms after the last scroll event. Shorter and it flickers between
+        // flicks; longer and it feels like it forgot.
+        t = window.setTimeout(() => badge.classList.remove('is-scrolling'), 220)
+      }
+      addEventListener('scroll', onScroll, { passive: true })
+      mq.addEventListener('change', (e) => {
+        if (!e.matches) { clearTimeout(t); badge.classList.remove('is-scrolling') }
+      })
+    }
+  }
+</script>
