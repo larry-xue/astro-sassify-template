@@ -2,6 +2,10 @@
 
 A modern, responsive Astro template with Tailwind CSS and Alpine.js integration. This template provides a solid foundation for building fast, SEO-friendly websites with a clean design system.
 
+> **Building an AI agent product?** [Astroloop](https://github.com/lx-themes/astroloop) is a
+> landing template aimed at exactly that — an agent-loop diagram with a human handoff gate, a
+> per-tool permission matrix, and usage-based pricing instead of seats. Also MIT.
+
 ## 🚀 Features
 
 - [Astro](https://astro.build/) - The web framework for content-driven websites
@@ -119,6 +123,15 @@ npm create astro@latest -- --template larry-xue/astro-sassify-template
    ```
 
 5. Visit `http://localhost:4321` in your browser to see your site
+
+## 🧩 More Astro templates
+
+- **[Astroloop](https://github.com/lx-themes/astroloop)** — a landing page for AI agent products: an agent-loop diagram with a human handoff gate, and a per-tool permission matrix. [Demo](https://astroloop.larryxue.dev)
+- [Astro Zen Blog](https://github.com/larry-xue/astro-zen-blog) — a minimal blog, with typography tuned for long-form reading. [Demo](https://astro-zen-blog.larryxue.dev/)
+- [Apple-Style Portfolio](https://github.com/larry-xue/apple-style-portfolio) — a minimalist portfolio with GSAP motion and a Three.js accent. [Demo](https://apple-style-portfolio.larryxue.dev)
+- [Quiet Bar](https://github.com/larry-xue/quiet-bar) — a one-pager for a bar or restaurant. No CSS framework, no JavaScript libraries. [Demo](https://quiet-bar-theme.larryxue.dev)
+
+All MIT, all free for commercial use.
 
 ## 📝 License
 
